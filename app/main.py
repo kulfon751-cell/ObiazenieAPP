@@ -3,14 +3,34 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from typing import List, Optional
 import pandas as pd
+import os
 from datetime import date, datetime, timedelta
 import calendar
 import pathlib
 
-# Files expected at repository root
-# Files expected at repository root
-DATA_FILE = pathlib.Path(__file__).resolve().parent.parent / 'DostepnoscWTygodniach.xlsx'
-PROD_FILE = pathlib.Path(__file__).resolve().parent.parent / 'Raport_dane.xlsx'
+# Files expected at repository root by default.
+# Allow overriding via environment variables so the app can read files from a network share
+# Examples:
+#  - set DATA_FILE_PATH="Z:\\folder\\DostepnoscWTygodniach.xlsx"
+#  - set PROD_FILE_PATH="\\\\server\\share\\Raport_dane.xlsx"
+def _resolve_path_from_env(varname: str, default_path: pathlib.Path) -> pathlib.Path:
+    v = os.environ.get(varname)
+    if not v:
+        return default_path
+    try:
+        p = pathlib.Path(v)
+        if not p.is_absolute():
+            # interpret relative paths relative to repo root
+            p = (pathlib.Path(__file__).resolve().parent.parent / p).resolve()
+        return p
+    except Exception:
+        return default_path
+
+DEFAULT_DATA = pathlib.Path(__file__).resolve().parent.parent / 'DostepnoscWTygodniach.xlsx'
+DEFAULT_PROD = pathlib.Path(__file__).resolve().parent.parent / 'Raport_dane.xlsx'
+
+DATA_FILE = _resolve_path_from_env('DATA_FILE_PATH', DEFAULT_DATA)
+PROD_FILE = _resolve_path_from_env('PROD_FILE_PATH', DEFAULT_PROD)
 
 app = FastAPI(title="Dostępność urządzeń")
 
