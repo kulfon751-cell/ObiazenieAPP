@@ -3,8 +3,8 @@ REM Portable launcher for ObciazenieApp (per-user, no admin required)
 REM Usage: unzip dist\ObciazenieApp into a folder and place this .bat next to ObciazenieApp.exe
 
 :: Configure UNC paths here if needed (edit before running)
-set "PROD_FILE_PATH=\\nas1\Planowanie\Raport_dane.xlsx"
-set "DATA_FILE_PATH=\\nas1\Planowanie\DostepnoscWTygodniach.xlsx"
+set "PROD_FILE_PATH=\\nas1\PRODUKCJA\Raport_dane.xlsx"
+set "DATA_FILE_PATH=\\nas1\PRODUKCJA\DostepnoscWTygodniach.xlsx"
 
 :: Start the application (runs in same folder as this batch)
 cd /d "%~dp0"

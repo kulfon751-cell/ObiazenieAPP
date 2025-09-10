@@ -7,10 +7,10 @@ Usage (run as the target user):
 
 #>
 param(
-    [string]$ZipPath = "$PSScriptRoot\\ObciazenieApp_installer_bundle.zip",
-    [string]$Dest = "$env:LOCALAPPDATA\\ObciazenieApp",
-    [string]$ProdFilePath = "",
-    [string]$DataFilePath = "",
+    [string]$ZipPath = "$PSScriptRoot\ObciazenieApp_installer_bundle.zip",
+    [string]$Dest = "$env:LOCALAPPDATA\ObciazenieApp",
+    [string]$ProdFilePath = "\\nas1\PRODUKCJA\Raport_dane.xlsx",
+    [string]$DataFilePath = "\\nas1\PRODUKCJA\DostepnoscWTygodniach.xlsx",
     [switch]$CreateScheduledTask = $true
 )
 
