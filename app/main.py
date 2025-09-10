@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query, Body, UploadFile, File
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, JSONResponse
+import shutil
 from pydantic import BaseModel
 from typing import List, Optional
 import pandas as pd
@@ -488,7 +489,26 @@ async def availability(device_id: str, month: List[str] = Query(...), prorate: b
 
 @app.get('/', response_class=HTMLResponse)
 async def simple_ui():
+    # show banner when uploaded override files exist
+    banner_html = ''
+    try:
+        ups = []
+        if (UPLOAD_DIR / UPLOADED_PROD_NAME).exists():
+            ups.append(f'Raport: {UPLOADED_PROD_NAME}')
+        if (UPLOAD_DIR / UPLOADED_DATA_NAME).exists():
+            ups.append(f'Dostępność: {UPLOADED_DATA_NAME}')
+        if ups:
+            banner_html = f"""
+            <div id='uploadBanner' style='background:#07303a;color:#bde4ff;padding:10px;border-radius:6px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center'>
+                <div><strong>Używane pliki z katalogu uploaded/:</strong> {'; '.join(ups)}</div>
+                <div><button id='clearUploadsBtn' style='background:#ef4444;color:white;border:0;padding:6px 8px;border-radius:4px;cursor:pointer'>Wyczyść nadpisania</button></div>
+            </div>
+            """
+    except Exception:
+        banner_html = ''
+
     html = """
+<!doctype html>
 <!doctype html>
 <html>
     <head>
@@ -539,6 +559,7 @@ async def simple_ui():
     </head>
     <body>
         <div class="layout">
+            __BANNER__
             <header>Obciążenie urządzęń - dashboard</header>
             <div class="content">
                 <div class="panel slicers">
@@ -558,6 +579,7 @@ async def simple_ui():
                     <!-- Top N removed; show all devices -->
                     <!-- prorated values hidden in UI by request -->
                     <button id="refresh" style="margin-top:8px;padding:8px 10px;background:var(--accent);border-radius:6px;border:0;color:#04233a">Odśwież</button>
+                    <a href="/upload" style="display:block;margin-top:8px;padding:6px 8px;background:#061126;border-radius:6px;color:var(--accent);text-decoration:none;text-align:center">Załaduj pliki (jeśli brak dostępu do \u005C\u005Cnas1)</a>
                     <div class="kpis" style="margin-top:10px">
                         <div class="kpi"><div class="t">Suma dostępności (full)</div><div id="sum_full" class="v">-</div></div>
                         <div class="kpi"><div class="t">Suma obciążenia (full)</div><div id="load_full" class="v">-</div></div>
@@ -858,13 +880,105 @@ async def simple_ui():
             })();
             document.getElementById('refresh').onclick = loadDevices;
             document.getElementById('department').onchange = loadDevices;
+            // attach clear uploads button (if present)
+            try{
+                const btn = document.getElementById('clearUploadsBtn');
+                if(btn){ btn.addEventListener('click', async function(){
+                    if(!confirm('Wyczyścić pliki uploaded/?')) return;
+                    try{
+                        const resp = await fetch('/upload/clear', { method: 'POST' });
+                        if(resp.ok){ location.reload(); return; }
+                        const j = await resp.json();
+                        alert('Błąd: ' + (j && j.errors ? j.errors.join('; ') : JSON.stringify(j)));
+                    }catch(e){ alert('Błąd: ' + (e && e.message ? e.message : e)); }
+                }); }
+            }catch(e){ console.warn('attach clearUploadsBtn failed', e); }
             // initial load
             loadDevices();
         </script>
     </body>
 </html>
 """
+    # inject banner_html safely (avoid f-string parsing of CSS braces)
+    html = html.replace('__BANNER__', banner_html)
     return HTMLResponse(content=html)
+
+
+
+@app.get('/upload', response_class=HTMLResponse)
+async def upload_form():
+    html = """
+<!doctype html>
+<html><head><meta charset='utf-8'><title>Załaduj pliki</title></head><body style='font-family:Segoe UI, Arial;margin:20px;'>
+<h2>Załaduj pliki Excel (Raport_dane.xlsx i DostepnoscWTygodniach.xlsx)</h2>
+<p>Jeśli aplikacja nie ma dostępu do udziału sieciowego, możesz przesłać lokalne kopie tutaj. Pliki zostaną zapisane i użyte przez aplikacją.</p>
+<form action='/upload' method='post' enctype='multipart/form-data'>
+  <div><label>Raport produkcji (Raport_dane.xlsx):</label><br><input type='file' name='prodfile' accept='.xlsx,.xls'></div>
+  <div style='margin-top:8px;'><label>Dostępność (DostepnoscWTygodniach.xlsx):</label><br><input type='file' name='datafile' accept='.xlsx,.xls'></div>
+  <div style='margin-top:12px;'><button type='submit'>Wyślij pliki</button></div>
+</form>
+<p style='margin-top:10px;'><a href='/'>Powrót do dashboardu</a></p>
+</body></html>
+"""
+    return HTMLResponse(content=html)
+
+
+@app.post('/upload')
+async def handle_upload(prodfile: UploadFile = File(None), datafile: UploadFile = File(None)):
+    saved = []
+    errors = []
+    try:
+        UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": f"Nie można utworzyć katalogu upload: {e}"})
+
+    if prodfile is not None:
+        target = UPLOAD_DIR / UPLOADED_PROD_NAME
+        try:
+            with open(target, 'wb') as out_f:
+                shutil.copyfileobj(prodfile.file, out_f)
+            saved.append(str(target.name))
+        except Exception as e:
+            errors.append(f'prodfile: {e}')
+
+    if datafile is not None:
+        target = UPLOAD_DIR / UPLOADED_DATA_NAME
+        try:
+            with open(target, 'wb') as out_f:
+                shutil.copyfileobj(datafile.file, out_f)
+            saved.append(str(target.name))
+        except Exception as e:
+            errors.append(f'datafile: {e}')
+
+    # If user posted via browser form, redirect back to root
+    if errors:
+        return JSONResponse(status_code=500, content={"saved": saved, "errors": errors})
+    return RedirectResponse(url='/', status_code=303)
+
+
+
+@app.post('/upload/clear')
+async def clear_uploads():
+    errors = []
+    removed = []
+    try:
+        p1 = UPLOAD_DIR / UPLOADED_PROD_NAME
+        if p1.exists():
+            try:
+                p1.unlink()
+                removed.append(str(p1.name))
+            except Exception as e:
+                errors.append(f'{p1.name}: {e}')
+        p2 = UPLOAD_DIR / UPLOADED_DATA_NAME
+        if p2.exists():
+            try:
+                p2.unlink()
+                removed.append(str(p2.name))
+            except Exception as e:
+                errors.append(f'{p2.name}: {e}')
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"errors": [str(e)]})
+    return JSONResponse(status_code=200, content={"removed": removed, "errors": errors})
 
 
 
