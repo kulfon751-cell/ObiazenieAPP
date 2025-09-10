@@ -1,0 +1,39 @@
+﻿
+        <!doctype html>
+        <html>
+            <head>
+                <meta charset="utf-8" />
+                <title>Dostępność - prosty UI</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 2rem; }
+                    label { display:block; margin-top: .5rem }
+                    pre { background:#f4f4f4; padding:1rem }
+                </style>
+            </head>
+            <body>
+                <h2>Dostępność urządzenia</h2>
+                <label>Urządzenie (np. 10245)<input id="device" value="10245"></label>
+                <label>Miesiąc (YYYY-MM)<input id="month" value="2025-09"></label>
+                <label><input id="prorate" type="checkbox"> Prorate tygodnie</label>
+                <button id="go">Pobierz</button>
+                <h3>Wynik</h3>
+                <pre id="out">(tu pojawi się wynik)</pre>
+                <script>
+                    document.getElementById('go').onclick = async function(){
+                        const device = document.getElementById('device').value.trim();
+                        const month = document.getElementById('month').value.trim();
+                        const prorate = document.getElementById('prorate').checked ? '&prorate=true' : '';
+                        if(!device || !month){ alert('Wypełnij device i month'); return }
+                        const url = `/availability/${encodeURIComponent(device)}?month=${encodeURIComponent(month)}${prorate}`;
+                        document.getElementById('out').textContent = 'Ładowanie...';
+                        try{
+                            const r = await fetch(url);
+                            if(!r.ok){ document.getElementById('out').textContent = `Błąd: ${r.status} ${r.statusText}`; return }
+                            const data = await r.json();
+                            document.getElementById('out').textContent = JSON.stringify(data, null, 2);
+                        }catch(e){ document.getElementById('out').textContent = 'Błąd: '+e }
+                    }
+                </script>
+            </body>
+        </html>
+        

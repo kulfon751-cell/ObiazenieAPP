@@ -1,0 +1,5196 @@
+﻿[
+    {
+        "part_number":  "Q-IAS-2145-232",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.0,
+        "order_id":  "3234586"
+    },
+    {
+        "part_number":  "Q-STA-PR_6149733",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.0,
+        "order_id":  "3236312"
+    },
+    {
+        "part_number":  "Q-STA-PR_5806237",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3132543"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587467",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.6,
+        "order_id":  "3140854"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587512",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  16.5,
+        "order_id":  "3140860"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587512",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.9,
+        "order_id":  "3140863"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2000000000000002,
+        "order_id":  "3141216"
+    },
+    {
+        "part_number":  "Q-STA-PR_5862631",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.17,
+        "order_id":  "3143294"
+    },
+    {
+        "part_number":  "Q-STA-PR_5445247",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3146757"
+    },
+    {
+        "part_number":  "Q-STA-PR_6007618",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3148144"
+    },
+    {
+        "part_number":  "Q-STA-PR_5989783",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.98,
+        "order_id":  "3159961"
+    },
+    {
+        "part_number":  "Q-STA-PR_5976289",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  9.0,
+        "order_id":  "3160031"
+    },
+    {
+        "part_number":  "ZM-3.7117/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.85,
+        "order_id":  "3167797"
+    },
+    {
+        "part_number":  "ZM-3.7119/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.03,
+        "order_id":  "3167810"
+    },
+    {
+        "part_number":  "ZM-3.7121/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.33,
+        "order_id":  "3167820"
+    },
+    {
+        "part_number":  "ZM-3.7123/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.33,
+        "order_id":  "3167831"
+    },
+    {
+        "part_number":  "ZM-4.8849/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.85,
+        "order_id":  "3168273"
+    },
+    {
+        "part_number":  "ZM-4.8849/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.61,
+        "order_id":  "3168275"
+    },
+    {
+        "part_number":  "05215-5100/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.0,
+        "order_id":  "3175413"
+    },
+    {
+        "part_number":  "Q-STA-PR_2186021",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.22,
+        "order_id":  "3186420"
+    },
+    {
+        "part_number":  "Q-STA-PR_2186021",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3186421"
+    },
+    {
+        "part_number":  "Q-STA-BU_6045413",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  5.4,
+        "order_id":  "3187104"
+    },
+    {
+        "part_number":  "Q-STA-BU_6135383",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  14.0,
+        "order_id":  "3189642"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194500",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3189714"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249125-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.67,
+        "order_id":  "3190983"
+    },
+    {
+        "part_number":  "B-2410-643/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.25,
+        "order_id":  "3202938"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553175",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3209712"
+    },
+    {
+        "part_number":  "Q-STA-PR_5577900",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3227810"
+    },
+    {
+        "part_number":  "Q-STA-PR_5577914",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3227877"
+    },
+    {
+        "part_number":  "QE11.16.00.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  9.01,
+        "order_id":  "3230496"
+    },
+    {
+        "part_number":  "Q-STA-PR_5577900",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.5,
+        "order_id":  "3230928"
+    },
+    {
+        "part_number":  "Q-STA-PR_5897312",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.2,
+        "order_id":  "3231074"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917469",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.25,
+        "order_id":  "3232958"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917469",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3232960"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917469",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.5,
+        "order_id":  "3232961"
+    },
+    {
+        "part_number":  "Q-STA-PR_6138758",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3232972"
+    },
+    {
+        "part_number":  "Q-STA-PR_6139929",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3232981"
+    },
+    {
+        "part_number":  "Q-STA-PR_6032804-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.08,
+        "order_id":  "3234637"
+    },
+    {
+        "part_number":  "Q-STA-PR_6032804-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.12,
+        "order_id":  "3234639"
+    },
+    {
+        "part_number":  "B-2410-665/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  9.0,
+        "order_id":  "3237142"
+    },
+    {
+        "part_number":  "Q-STA-BU_6164630-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  47.46,
+        "order_id":  "3237933"
+    },
+    {
+        "part_number":  "Q-STA-BU_6164630-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  47.46,
+        "order_id":  "3237934"
+    },
+    {
+        "part_number":  "Q-STA-BU_6164630-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  47.46,
+        "order_id":  "3237935"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194432",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  28.78,
+        "order_id":  "3237956"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194432",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  28.78,
+        "order_id":  "3237957"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194530",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  27.32,
+        "order_id":  "3237964"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194530",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  27.32,
+        "order_id":  "3237965"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194587",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.99,
+        "order_id":  "3237971"
+    },
+    {
+        "part_number":  "QE11.19.00.50.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  26.51,
+        "order_id":  "3243067"
+    },
+    {
+        "part_number":  "D-2420-104/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.2,
+        "order_id":  "3256306"
+    },
+    {
+        "part_number":  "D-2420-104/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3256307"
+    },
+    {
+        "part_number":  "Q-D-C-14-55520",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.12,
+        "order_id":  "3263651"
+    },
+    {
+        "part_number":  "Q-KIT-4174882",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.81,
+        "order_id":  "3263657"
+    },
+    {
+        "part_number":  "Q-LAW-0302881A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3264933"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194587",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  11.49,
+        "order_id":  "3272378"
+    },
+    {
+        "part_number":  "Q-STA-PR_2204141",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  16.0,
+        "order_id":  "3272385"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194645",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  30.5,
+        "order_id":  "3272402"
+    },
+    {
+        "part_number":  "Q-STA-BU_6135383",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  66.0,
+        "order_id":  "3268703"
+    },
+    {
+        "part_number":  "Q-BS-02_02.00.00-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.7,
+        "order_id":  "3273121"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249125-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.67,
+        "order_id":  "3190980"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587468",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.2,
+        "order_id":  "3210615"
+    },
+    {
+        "part_number":  "Q-STA-PR_5897312",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.8,
+        "order_id":  "3231075"
+    },
+    {
+        "part_number":  "Q-STA-PR_5897473",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.0,
+        "order_id":  "3232255"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587559",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  35.33,
+        "order_id":  "3140759"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587559",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  41.0,
+        "order_id":  "3230896"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587559",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  11.0,
+        "order_id":  "3230898"
+    },
+    {
+        "part_number":  "Q-STA-PR_5588652",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.6,
+        "order_id":  "3231500"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194530",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  27.32,
+        "order_id":  "3237966"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194530",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  27.32,
+        "order_id":  "3237967"
+    },
+    {
+        "part_number":  "Q-LAW-H0831-10W",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.33,
+        "order_id":  "3264921"
+    },
+    {
+        "part_number":  "Q-LAW-0302881A",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  6.75,
+        "order_id":  "3275223"
+    },
+    {
+        "part_number":  "Q-STA-PR_5989785",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  5.4799999999999995,
+        "order_id":  "3160040"
+    },
+    {
+        "part_number":  "Q-STA-PR_5976260",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.68,
+        "order_id":  "3163735"
+    },
+    {
+        "part_number":  "ZM-3.7110/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3167580"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194500",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3189714"
+    },
+    {
+        "part_number":  "Q-STA-PR_2205599",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  4.27,
+        "order_id":  "3190046"
+    },
+    {
+        "part_number":  "Q-STA-PR_2205599",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  7.9399999999999995,
+        "order_id":  "3190049"
+    },
+    {
+        "part_number":  "06359-1000/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  12.4,
+        "order_id":  "3202907"
+    },
+    {
+        "part_number":  "QE11.13.35.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.1,
+        "order_id":  "3229248"
+    },
+    {
+        "part_number":  "QE11.21.01.01.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.6,
+        "order_id":  "3229255"
+    },
+    {
+        "part_number":  "B-2430-772/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.55,
+        "order_id":  "3230610"
+    },
+    {
+        "part_number":  "QE11.19.00.00.60",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.15,
+        "order_id":  "3234774"
+    },
+    {
+        "part_number":  "D-2220-821/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.03,
+        "order_id":  "3236130"
+    },
+    {
+        "part_number":  "06364-1000/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.5,
+        "order_id":  "3237123"
+    },
+    {
+        "part_number":  "D-2870-755/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.4,
+        "order_id":  "3237126"
+    },
+    {
+        "part_number":  "C-1650-548/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3237145"
+    },
+    {
+        "part_number":  "06359-1000/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  18.4,
+        "order_id":  "3252081"
+    },
+    {
+        "part_number":  "B-2340-184/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3260941"
+    },
+    {
+        "part_number":  "QE31.18.22.04.02.0",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  35.47,
+        "order_id":  "3261645"
+    },
+    {
+        "part_number":  "Q-COR-N121037A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.5,
+        "order_id":  "3263646"
+    },
+    {
+        "part_number":  "Q-ALT-403110065890",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.2,
+        "order_id":  "3269358"
+    },
+    {
+        "part_number":  "Q-STA-PR_5708439",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  4.02,
+        "order_id":  "3138034"
+    },
+    {
+        "part_number":  "ZM-3.7111/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.37,
+        "order_id":  "3167591"
+    },
+    {
+        "part_number":  "QE11.23.20.01.00",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.05,
+        "order_id":  "3260994"
+    },
+    {
+        "part_number":  "QE11.23.20.01.00",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.4,
+        "order_id":  "3260995"
+    },
+    {
+        "part_number":  "QE11.25.00.06.01",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3277230"
+    },
+    {
+        "part_number":  "ZM-3.7280/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.6799999999999999,
+        "order_id":  "3160071"
+    },
+    {
+        "part_number":  "ZM-3.7281/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.44,
+        "order_id":  "3160078"
+    },
+    {
+        "part_number":  "ZM-3.7282/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3160085"
+    },
+    {
+        "part_number":  "ZM-3.7108/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.39,
+        "order_id":  "3190128"
+    },
+    {
+        "part_number":  "ZM-3.7109/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3190138"
+    },
+    {
+        "part_number":  "B-2140-708/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3499999999999999,
+        "order_id":  "3237140"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164036",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6799999999999999,
+        "order_id":  "3186561"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164036",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8,
+        "order_id":  "3187190"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194510P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3187235"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194510P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3187237"
+    },
+    {
+        "part_number":  "Q-STA-PR_5992885",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.98,
+        "order_id":  "3192000"
+    },
+    {
+        "part_number":  "Q-STA-PR_5992885",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.46,
+        "order_id":  "3192001"
+    },
+    {
+        "part_number":  "Q-STA-PR_5992885",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.98,
+        "order_id":  "3192002"
+    },
+    {
+        "part_number":  "B-2120-562/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  15.34,
+        "order_id":  "3230165"
+    },
+    {
+        "part_number":  "QE11.14.58.00.02",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3234557"
+    },
+    {
+        "part_number":  "06350-0002/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.0,
+        "order_id":  "3237112"
+    },
+    {
+        "part_number":  "Q-STA-BU_6127850P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.55,
+        "order_id":  "3252022"
+    },
+    {
+        "part_number":  "Q-STA-BU_6127850P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.55,
+        "order_id":  "3252023"
+    },
+    {
+        "part_number":  "Q-STA-1005494",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.9,
+        "order_id":  "3271406"
+    },
+    {
+        "part_number":  "Q-STA-PR_5992885",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.46,
+        "order_id":  "3192004"
+    },
+    {
+        "part_number":  "QE11.24.00.82.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.6,
+        "order_id":  "3237819"
+    },
+    {
+        "part_number":  "QE11.24.40.04.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.25,
+        "order_id":  "3261083"
+    },
+    {
+        "part_number":  "QE11.24.40.04.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.95,
+        "order_id":  "3261084"
+    },
+    {
+        "part_number":  "Q-COR-C46166K3C519",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.2,
+        "order_id":  "3277084"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587516",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3227765"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931463",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.8,
+        "order_id":  "3235037"
+    },
+    {
+        "part_number":  "Q-STA-PR_2208382",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.75,
+        "order_id":  "3272391"
+    },
+    {
+        "part_number":  "Q-BS-02_02.01.02-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3273128"
+    },
+    {
+        "part_number":  "ZM-4.8843/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.63,
+        "order_id":  "3168265"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587516",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.64,
+        "order_id":  "3231485"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587516",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.22,
+        "order_id":  "3231486"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587516",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.28,
+        "order_id":  "3231487"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587516",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.36,
+        "order_id":  "3231488"
+    },
+    {
+        "part_number":  "D-2890-686/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6000000000000001,
+        "order_id":  "3278613"
+    },
+    {
+        "part_number":  "Q-STA-BU_5247410",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  16.25,
+        "order_id":  "3127877"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648906",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  9.25,
+        "order_id":  "3127903"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648936",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.75,
+        "order_id":  "3127944"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648936",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  14.75,
+        "order_id":  "3127945"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648906",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.25,
+        "order_id":  "3144961"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648906",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  5.25,
+        "order_id":  "3155695"
+    },
+    {
+        "part_number":  "Q-STA-BU_5461243",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.37,
+        "order_id":  "3158871"
+    },
+    {
+        "part_number":  "Q-STA-BU_5461270",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.85,
+        "order_id":  "3158926"
+    },
+    {
+        "part_number":  "ZM-3.7277/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3160060"
+    },
+    {
+        "part_number":  "ZM-3.7278/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3160064"
+    },
+    {
+        "part_number":  "Q-STA-BU_2117528",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3167716"
+    },
+    {
+        "part_number":  "Q-STA-BU_5465166",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3172063"
+    },
+    {
+        "part_number":  "Q-STA-BU_5465166",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.43,
+        "order_id":  "3172064"
+    },
+    {
+        "part_number":  "05215-5100/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3175413"
+    },
+    {
+        "part_number":  "D-2870-774/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3175426"
+    },
+    {
+        "part_number":  "Q-STA-BU_6045413",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.13,
+        "order_id":  "3187104"
+    },
+    {
+        "part_number":  "Q-STA-BU_6049688",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.65,
+        "order_id":  "3187172"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185445",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.71,
+        "order_id":  "3187212"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185446",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.71,
+        "order_id":  "3187213"
+    },
+    {
+        "part_number":  "Q-STA-BU_6135383",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.0,
+        "order_id":  "3189642"
+    },
+    {
+        "part_number":  "B-2140-727/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.7,
+        "order_id":  "3228996"
+    },
+    {
+        "part_number":  "B-2140-727/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.3,
+        "order_id":  "3228996"
+    },
+    {
+        "part_number":  "B-2140-727/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.04,
+        "order_id":  "3228996"
+    },
+    {
+        "part_number":  "B-2140-727/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.95,
+        "order_id":  "3229034"
+    },
+    {
+        "part_number":  "B-2140-727/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  5.68,
+        "order_id":  "3229034"
+    },
+    {
+        "part_number":  "B-2140-727/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.85,
+        "order_id":  "3229034"
+    },
+    {
+        "part_number":  "C-2870-775/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6000000000000001,
+        "order_id":  "3230180"
+    },
+    {
+        "part_number":  "D-2870-774/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3230215"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6000000000000001,
+        "order_id":  "3230498"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3230499"
+    },
+    {
+        "part_number":  "QE11.08.00.00.07",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.0,
+        "order_id":  "3234760"
+    },
+    {
+        "part_number":  "B-2120-582/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  23.7,
+        "order_id":  "3237133"
+    },
+    {
+        "part_number":  "B-2120-621/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.86,
+        "order_id":  "3237137"
+    },
+    {
+        "part_number":  "B-2140-708/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  25.5,
+        "order_id":  "3237140"
+    },
+    {
+        "part_number":  "QE11.10.21.02.08",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3237410"
+    },
+    {
+        "part_number":  "Q-BS-SKGSPAW",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.45,
+        "order_id":  "3256097"
+    },
+    {
+        "part_number":  "Q-BS-SKGSPAW",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.5,
+        "order_id":  "3256097"
+    },
+    {
+        "part_number":  "B-2340-184/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3260941"
+    },
+    {
+        "part_number":  "B-2340-185/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3261078"
+    },
+    {
+        "part_number":  "Q-COR-N121037A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3263646"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P1-B",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1500000000000001,
+        "order_id":  "3264579"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P2-B",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.84,
+        "order_id":  "3264580"
+    },
+    {
+        "part_number":  "Q-RR-53_RR_25",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3265265"
+    },
+    {
+        "part_number":  "Q-D-C-13-82941/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.08,
+        "order_id":  "3265681"
+    },
+    {
+        "part_number":  "Q-D-C-13-82941/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1800000000000002,
+        "order_id":  "3265681"
+    },
+    {
+        "part_number":  "Q-MIK-S1-76MM-M4",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  25.5,
+        "order_id":  "3268557"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185445",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.86,
+        "order_id":  "3191943"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185446",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.86,
+        "order_id":  "3191945"
+    },
+    {
+        "part_number":  "Q-STA-BU_6135383",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  18.0,
+        "order_id":  "3268703"
+    },
+    {
+        "part_number":  "Q-BS-01_01.01.01-D",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.9,
+        "order_id":  "3272213"
+    },
+    {
+        "part_number":  "Q-BS-02_01.01.01-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  4.9,
+        "order_id":  "3273126"
+    },
+    {
+        "part_number":  "Q-STA-BU_5514840",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.30000000000000004,
+        "order_id":  "3131959"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648936",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.75,
+        "order_id":  "3155705"
+    },
+    {
+        "part_number":  "Q-STA-BU_5648936",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3158451"
+    },
+    {
+        "part_number":  "D-2410-633/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3260964"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P1-B",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3272924"
+    },
+    {
+        "part_number":  "Q-STA-BU_6169988",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  5.9,
+        "order_id":  "3265218"
+    },
+    {
+        "part_number":  "ZM-2.0969/2/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.8000000000000003,
+        "order_id":  "3273596"
+    },
+    {
+        "part_number":  "Q-STA-BU_5395575",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.48,
+        "order_id":  "3125961"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3140871"
+    },
+    {
+        "part_number":  "ZM-3.7110/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.05,
+        "order_id":  "3167580"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185503",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.39,
+        "order_id":  "3185947"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185503",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.6599999999999999,
+        "order_id":  "3186623"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185503",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.6599999999999999,
+        "order_id":  "3189993"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185503",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.6599999999999999,
+        "order_id":  "3189994"
+    },
+    {
+        "part_number":  "06359-1000/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.6500000000000001,
+        "order_id":  "3202907"
+    },
+    {
+        "part_number":  "06339-3000/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.96,
+        "order_id":  "3202919"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3227778"
+    },
+    {
+        "part_number":  "QE11.13.35.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3229248"
+    },
+    {
+        "part_number":  "QE11.21.01.01.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.4,
+        "order_id":  "3229255"
+    },
+    {
+        "part_number":  "QE11.13.35.00.02",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3229307"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3229562"
+    },
+    {
+        "part_number":  "QE11.15.00.85.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3230494"
+    },
+    {
+        "part_number":  "B-2120-618/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.5,
+        "order_id":  "3230605"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3231038"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3231039"
+    },
+    {
+        "part_number":  "QE11.24.46.01.02",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.36,
+        "order_id":  "3233197"
+    },
+    {
+        "part_number":  "QE11.13.35.00.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.14,
+        "order_id":  "3234768"
+    },
+    {
+        "part_number":  "QE11.19.00.00.60",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3234774"
+    },
+    {
+        "part_number":  "B-2430-810/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.14,
+        "order_id":  "3237143"
+    },
+    {
+        "part_number":  "QE11.24.14.00.01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  20.3,
+        "order_id":  "3240854"
+    },
+    {
+        "part_number":  "QE11.24.14.00.01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3240854"
+    },
+    {
+        "part_number":  "QE11.24.14.00.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  20.3,
+        "order_id":  "3240855"
+    },
+    {
+        "part_number":  "QE11.24.14.00.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3240855"
+    },
+    {
+        "part_number":  "QE11.19.00.50.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.05,
+        "order_id":  "3243067"
+    },
+    {
+        "part_number":  "06359-1000/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.32,
+        "order_id":  "3252081"
+    },
+    {
+        "part_number":  "QE11.24.24.00.01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3253210"
+    },
+    {
+        "part_number":  "QE11.20.07.04.02",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8,
+        "order_id":  "3253441"
+    },
+    {
+        "part_number":  "QE11.20.07.04.02",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.8,
+        "order_id":  "3253442"
+    },
+    {
+        "part_number":  "QE11.25.16.00.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3260472"
+    },
+    {
+        "part_number":  "QE11.25.00.00.22",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3260729"
+    },
+    {
+        "part_number":  "Q-GSMT-W15-P",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.9,
+        "order_id":  "3262739"
+    },
+    {
+        "part_number":  "Q-D-C-13-82941/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.71,
+        "order_id":  "3265681"
+    },
+    {
+        "part_number":  "Q-COR-10-046511-01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  5.34,
+        "order_id":  "3267102"
+    },
+    {
+        "part_number":  "Q-COR-10-046511-02",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.9,
+        "order_id":  "3267104"
+    },
+    {
+        "part_number":  "Q-D-K-1165270",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.43,
+        "order_id":  "3271278"
+    },
+    {
+        "part_number":  "Q-STA-1005494",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3271406"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185503",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.6500000000000001,
+        "order_id":  "3187222"
+    },
+    {
+        "part_number":  "Q-BS-01_01.01.00-E",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.3,
+        "order_id":  "3272208"
+    },
+    {
+        "part_number":  "Q-BS-01_01.01.01-D",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  12.3,
+        "order_id":  "3272213"
+    },
+    {
+        "part_number":  "Q-BS-02_01.01.01-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  12.3,
+        "order_id":  "3273126"
+    },
+    {
+        "part_number":  "Q-COR-NCP212025D1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3275216"
+    },
+    {
+        "part_number":  "Q-STA-BU_5514368",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3131949"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553163",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.06,
+        "order_id":  "3231275"
+    },
+    {
+        "part_number":  "ZM-3.1926/2/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  10.24,
+        "order_id":  "3270212"
+    },
+    {
+        "part_number":  "ZM-3.3741/64/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.11,
+        "order_id":  "3270216"
+    },
+    {
+        "part_number":  "ZM-2.0969/2/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3273596"
+    },
+    {
+        "part_number":  "ZM-3.3741/84/CH/BS",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3277096"
+    },
+    {
+        "part_number":  "Q-COR-10-046511-02",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.6,
+        "order_id":  "3278099"
+    },
+    {
+        "part_number":  "QE11.24.46.01.01",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3233196"
+    },
+    {
+        "part_number":  "ZM-3.7111/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3167591"
+    },
+    {
+        "part_number":  "QE11.23.20.01.00",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.64,
+        "order_id":  "3260994"
+    },
+    {
+        "part_number":  "QE11.23.20.01.00",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.98,
+        "order_id":  "3260995"
+    },
+    {
+        "part_number":  "Q-STA-PR_1992441",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.8,
+        "order_id":  "3154023"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185441",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3185231"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185437",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3186605"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185441",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.48,
+        "order_id":  "3186606"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185443",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3186607"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185444",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3186608"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185464",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3186617"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185437",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.05,
+        "order_id":  "3187208"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185441",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3187209"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.34,
+        "order_id":  "3229128"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.8,
+        "order_id":  "3230499"
+    },
+    {
+        "part_number":  "QE11.22.22.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8600000000000001,
+        "order_id":  "3230502"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3234615"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3234617"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3235038"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3235039"
+    },
+    {
+        "part_number":  "QE11.21.00.00.08",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6499999999999999,
+        "order_id":  "3237206"
+    },
+    {
+        "part_number":  "QE11.22.22.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3243069"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.3,
+        "order_id":  "3243221"
+    },
+    {
+        "part_number":  "ZM-3.1927/1/CH",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6499999999999999,
+        "order_id":  "3255878"
+    },
+    {
+        "part_number":  "Q-D-C-2011049",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.06,
+        "order_id":  "3263653"
+    },
+    {
+        "part_number":  "ZM-3.7029/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3266328"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185796",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  10.540000000000001,
+        "order_id":  "3190004"
+    },
+    {
+        "part_number":  "Q-D-C-1008818",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3273920"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185796",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3190003"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553170",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.42,
+        "order_id":  "3231302"
+    },
+    {
+        "part_number":  "ZM-3.1927/1/CH",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  8.0,
+        "order_id":  "3273599"
+    },
+    {
+        "part_number":  "Q-STA-BU_2437982",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3131363"
+    },
+    {
+        "part_number":  "Q-STA-BU_2514949",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3131367"
+    },
+    {
+        "part_number":  "Q-STA-PR_5738758",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.94,
+        "order_id":  "3138051"
+    },
+    {
+        "part_number":  "Q-STA-PR_5445247",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3146757"
+    },
+    {
+        "part_number":  "Q-STA-PR_5710044",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3147016"
+    },
+    {
+        "part_number":  "Q-STA-PR_5710044",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3147017"
+    },
+    {
+        "part_number":  "Q-STA-PR_5710044",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3147018"
+    },
+    {
+        "part_number":  "Q-STA-PR_5976261",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.81,
+        "order_id":  "3160024"
+    },
+    {
+        "part_number":  "ZM-3.7120/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.94,
+        "order_id":  "3167477"
+    },
+    {
+        "part_number":  "ZM-3.7122/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.81,
+        "order_id":  "3167488"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275928",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3167545"
+    },
+    {
+        "part_number":  "ZM-3.7245/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  14.67,
+        "order_id":  "3168857"
+    },
+    {
+        "part_number":  "ZM-3.7245/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  6.29,
+        "order_id":  "3168859"
+    },
+    {
+        "part_number":  "Q-STA-PR_2162782",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3186558"
+    },
+    {
+        "part_number":  "Q-STA-PR_2162782",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3187189"
+    },
+    {
+        "part_number":  "Q-STA-PR_2162782",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3189950"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234660"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234662"
+    },
+    {
+        "part_number":  "QE11.08.00.00.07",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.3,
+        "order_id":  "3234760"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3235057"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3235058"
+    },
+    {
+        "part_number":  "QE11.09.08.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.3,
+        "order_id":  "3245648"
+    },
+    {
+        "part_number":  "ZM-3.7056/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.22,
+        "order_id":  "3258738"
+    },
+    {
+        "part_number":  "Q-BS-01_01.01.00-E",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  5.3,
+        "order_id":  "3272208"
+    },
+    {
+        "part_number":  "Q-BS-02_02.00.00-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  10.3,
+        "order_id":  "3273121"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249100",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.26,
+        "order_id":  "3189739"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249117",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.48,
+        "order_id":  "3189751"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249125",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.82,
+        "order_id":  "3189766"
+    },
+    {
+        "part_number":  "ZM-3.7248/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.56,
+        "order_id":  "3167641"
+    },
+    {
+        "part_number":  "ZM-3.7247/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.02,
+        "order_id":  "3168868"
+    },
+    {
+        "part_number":  "QE11.09.08.00.01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  7.81,
+        "order_id":  "3260987"
+    },
+    {
+        "part_number":  "Q-STA-BU_5265697",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.42,
+        "order_id":  "3125956"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3140871"
+    },
+    {
+        "part_number":  "Q-STA-PR_5976260",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3163735"
+    },
+    {
+        "part_number":  "ZM-3.7118/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.6599999999999997,
+        "order_id":  "3167463"
+    },
+    {
+        "part_number":  "ZM-3.7120/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3167477"
+    },
+    {
+        "part_number":  "ZM-3.7122/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.9799999999999995,
+        "order_id":  "3167488"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275928",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.42,
+        "order_id":  "3167545"
+    },
+    {
+        "part_number":  "ZM-3.7244/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.47,
+        "order_id":  "3167623"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3227778"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.94,
+        "order_id":  "3229128"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3229562"
+    },
+    {
+        "part_number":  "QE11.15.00.85.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  13.91,
+        "order_id":  "3230494"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3231038"
+    },
+    {
+        "part_number":  "Q-STA-PR_5591696",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3231039"
+    },
+    {
+        "part_number":  "Q-STA-PR_5818783",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.0999999999999996,
+        "order_id":  "3231049"
+    },
+    {
+        "part_number":  "Q-STA-PR_5638343",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3231521"
+    },
+    {
+        "part_number":  "QE11.13.35.00.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.6999999999999997,
+        "order_id":  "3234768"
+    },
+    {
+        "part_number":  "Q-STA-PR_5933071",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.6999999999999997,
+        "order_id":  "3234941"
+    },
+    {
+        "part_number":  "QE11.19.00.00.33",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.6999999999999997,
+        "order_id":  "3237202"
+    },
+    {
+        "part_number":  "QE11.22.22.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  28.3,
+        "order_id":  "3243069"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.3,
+        "order_id":  "3243221"
+    },
+    {
+        "part_number":  "Q-COR-NCP212025D3",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.14,
+        "order_id":  "3245637"
+    },
+    {
+        "part_number":  "Q-D-C-14-50049",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3255807"
+    },
+    {
+        "part_number":  "Q-ASS-6155731572",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  27.080000000000002,
+        "order_id":  "3256309"
+    },
+    {
+        "part_number":  "Q-STA-PR_6155916",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.1,
+        "order_id":  "3260601"
+    },
+    {
+        "part_number":  "Q-STA-504270RUB201",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.1799999999999997,
+        "order_id":  "3271409"
+    },
+    {
+        "part_number":  "Q-BS-02_01.00.00-B",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  5.3,
+        "order_id":  "3273120"
+    },
+    {
+        "part_number":  "Q-D-C-1008944",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3273575"
+    },
+    {
+        "part_number":  "Q-D-C-1008818",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.64,
+        "order_id":  "3273920"
+    },
+    {
+        "part_number":  "Q-D-C-12-83335",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3273921"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249100",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.42,
+        "order_id":  "3189739"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249117",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3189751"
+    },
+    {
+        "part_number":  "ZM-3.6622/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8899999999999999,
+        "order_id":  "3274486"
+    },
+    {
+        "part_number":  "Q-COR-NCP212025D3",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3275203"
+    },
+    {
+        "part_number":  "ZM-3.7246/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.42,
+        "order_id":  "3167632"
+    },
+    {
+        "part_number":  "ZM-4.8843/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.49,
+        "order_id":  "3168265"
+    },
+    {
+        "part_number":  "ZM-3.7116/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3189613"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553175",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.3,
+        "order_id":  "3230999"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587512",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  11.100000000000001,
+        "order_id":  "3231029"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587512",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  15.9,
+        "order_id":  "3231030"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.6,
+        "order_id":  "3231476"
+    },
+    {
+        "part_number":  "Q-STA-PR_5588652",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.940000000000001,
+        "order_id":  "3231501"
+    },
+    {
+        "part_number":  "Q-STA-PR_5588652",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.74,
+        "order_id":  "3252479"
+    },
+    {
+        "part_number":  "Q-LAW-H0830",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3264923"
+    },
+    {
+        "part_number":  "Q-LAW-H0831",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.34,
+        "order_id":  "3264926"
+    },
+    {
+        "part_number":  "Q-COR-10-044681",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.78,
+        "order_id":  "3271399"
+    },
+    {
+        "part_number":  "Q-COR-25315-002",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  40.3,
+        "order_id":  "3272216"
+    },
+    {
+        "part_number":  "Q-STA-PR_5588652",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3272417"
+    },
+    {
+        "part_number":  "Q-STA-PR_5818783",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.4499999999999997,
+        "order_id":  "3231050"
+    },
+    {
+        "part_number":  "Q-STA-PR_5588652",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3276437"
+    },
+    {
+        "part_number":  "Q-STA-PR_2186029",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3186429"
+    },
+    {
+        "part_number":  "Q-STA-PR_2186029",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3186431"
+    },
+    {
+        "part_number":  "Q-STA-PR_2186037",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.94,
+        "order_id":  "3186441"
+    },
+    {
+        "part_number":  "Q-STA-PR_2160268",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3189649"
+    },
+    {
+        "part_number":  "Q-STA-PR_2160268",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3191724"
+    },
+    {
+        "part_number":  "QE11.21.00.00.08",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  14.3,
+        "order_id":  "3237206"
+    },
+    {
+        "part_number":  "QE11.07.00.01.02",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3260986"
+    },
+    {
+        "part_number":  "Q-P-EKRAN SWM1A",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.05,
+        "order_id":  "3269362"
+    },
+    {
+        "part_number":  "Q-STA-BU_5234206",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.61,
+        "order_id":  "3125985"
+    },
+    {
+        "part_number":  "Q-STA-BU_5234223",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.61,
+        "order_id":  "3125991"
+    },
+    {
+        "part_number":  "Q-STA-BU_5281498",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.0,
+        "order_id":  "3126003"
+    },
+    {
+        "part_number":  "Q-STA-BU_5313910",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3126011"
+    },
+    {
+        "part_number":  "Q-STA-BU_5314402",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3126017"
+    },
+    {
+        "part_number":  "Q-STA-PR_5763941",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3147059"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185808",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3186652"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185808",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3191982"
+    },
+    {
+        "part_number":  "QE11.13.00.00.24",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.8,
+        "order_id":  "3230488"
+    },
+    {
+        "part_number":  "Q-STA-PR_6032804-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.5,
+        "order_id":  "3234637"
+    },
+    {
+        "part_number":  "Q-STA-PR_6032804-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.6,
+        "order_id":  "3234639"
+    },
+    {
+        "part_number":  "Q-STA-PR_6023667",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.7,
+        "order_id":  "3235043"
+    },
+    {
+        "part_number":  "Q-STA-PR_6029302-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.82,
+        "order_id":  "3235044"
+    },
+    {
+        "part_number":  "Q-STA-PR_6029302-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3235045"
+    },
+    {
+        "part_number":  "Q-STA-PR_6029338-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.74,
+        "order_id":  "3235046"
+    },
+    {
+        "part_number":  "Q-STA-PR_6029338-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.82,
+        "order_id":  "3235047"
+    },
+    {
+        "part_number":  "QE11.20.44.04.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.35,
+        "order_id":  "3237416"
+    },
+    {
+        "part_number":  "QE11.20.44.05.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.35,
+        "order_id":  "3237418"
+    },
+    {
+        "part_number":  "Q-STA-PR_6128316-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5800000000000001,
+        "order_id":  "3260551"
+    },
+    {
+        "part_number":  "Q-STA-PR_6128316-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5800000000000001,
+        "order_id":  "3260552"
+    },
+    {
+        "part_number":  "Q-STA-PR_5723921",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3118439"
+    },
+    {
+        "part_number":  "QE11.24.00.00.31",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  13.8,
+        "order_id":  "3227288"
+    },
+    {
+        "part_number":  "Q-STA-PR_2279605",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.94,
+        "order_id":  "3167783"
+    },
+    {
+        "part_number":  "Q-TKH-1445.421",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  11.64,
+        "order_id":  "3261639"
+    },
+    {
+        "part_number":  "Q-TKH-1445TS35X233",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  5.3,
+        "order_id":  "3261641"
+    },
+    {
+        "part_number":  "Q-TKH-1445.003",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.9799999999999995,
+        "order_id":  "3261633"
+    },
+    {
+        "part_number":  "Q-STA-PR_6146662",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.25,
+        "order_id":  "3234969"
+    },
+    {
+        "part_number":  "Q-STA-PR_6154929",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3236151"
+    },
+    {
+        "part_number":  "Q-STA-PR_6143315",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.4200000000000002,
+        "order_id":  "3260554"
+    },
+    {
+        "part_number":  "Q-STA-PR_6042791-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3235050"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931040",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3261392"
+    },
+    {
+        "part_number":  "Q-STA-PR_6041353-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3235586"
+    },
+    {
+        "part_number":  "Q-STA-PR_6041353-3",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3235588"
+    },
+    {
+        "part_number":  "Q-STA-PR_6117535-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.45,
+        "order_id":  "3235617"
+    },
+    {
+        "part_number":  "Q-STA-PR_6041353-3",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3236993"
+    },
+    {
+        "part_number":  "Q-STA-PR_6143200",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3260553"
+    },
+    {
+        "part_number":  "Q-STA-PR_6168918-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3260604"
+    },
+    {
+        "part_number":  "Q-STA-PR_6168918-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3260605"
+    },
+    {
+        "part_number":  "Q-STA-PR_6216354-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3235090"
+    },
+    {
+        "part_number":  "Q-STA-PR_5928844",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3235548"
+    },
+    {
+        "part_number":  "Q-STA-BU_5930401",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.18,
+        "order_id":  "3158991"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553171P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.46,
+        "order_id":  "3231311"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553171P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.9,
+        "order_id":  "3231320"
+    },
+    {
+        "part_number":  "Q-STA-PR_6153504",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3234168"
+    },
+    {
+        "part_number":  "Q-STA-PR_6144360-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3234413"
+    },
+    {
+        "part_number":  "Q-STA-PR_6144360-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3234414"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152591",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3234417"
+    },
+    {
+        "part_number":  "Q-STA-PR_6144360-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3234681"
+    },
+    {
+        "part_number":  "Q-STA-PR_6144360-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3234683"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152591",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3234703"
+    },
+    {
+        "part_number":  "Q-STA-PR_6146597_1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3235068"
+    },
+    {
+        "part_number":  "Q-STA-PR_6146597_2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3235069"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152847-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3235075"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3235083"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3235653"
+    },
+    {
+        "part_number":  "Q-STA-PR_6268137",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6599999999999999,
+        "order_id":  "3236330"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152847-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3237002"
+    },
+    {
+        "part_number":  "Q-STA-PR_6156229",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3260602"
+    },
+    {
+        "part_number":  "Q-STA-PR_6156867",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3260603"
+    },
+    {
+        "part_number":  "Q-COR-10-046510-01",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.46,
+        "order_id":  "3267098"
+    },
+    {
+        "part_number":  "Q-COR-10-046510-02",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  9.3,
+        "order_id":  "3267100"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553102",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.86,
+        "order_id":  "3231231"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587471",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3141200"
+    },
+    {
+        "part_number":  "QE11.09.09.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3230481"
+    },
+    {
+        "part_number":  "QE11.14.58.00.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3230492"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.38,
+        "order_id":  "3230498"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.3999999999999995,
+        "order_id":  "3230499"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3234660"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3234662"
+    },
+    {
+        "part_number":  "Q-STA-PR_6181772-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3234980"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3235057"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3235057"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3235058"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3235058"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3235083"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3235084"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3235653"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3235657"
+    },
+    {
+        "part_number":  "Q-STA-PR_6151029-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3236313"
+    },
+    {
+        "part_number":  "Q-STA-PR_6151029-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3236315"
+    },
+    {
+        "part_number":  "B-2140-708/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.3,
+        "order_id":  "3237140"
+    },
+    {
+        "part_number":  "D-2410-614/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3237155"
+    },
+    {
+        "part_number":  "ZM-2.1512/84/CH",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.55,
+        "order_id":  "3241691"
+    },
+    {
+        "part_number":  "Q-STA-PR_6128316-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3260551"
+    },
+    {
+        "part_number":  "Q-STA-PR_6128316-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3260552"
+    },
+    {
+        "part_number":  "D-2870-756/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3263238"
+    },
+    {
+        "part_number":  "Q-COR-10-054871-01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.84,
+        "order_id":  "3263992"
+    },
+    {
+        "part_number":  "Q-PLA-RADDZL-02",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.0,
+        "order_id":  "3263999"
+    },
+    {
+        "part_number":  "Q-STA-PR_2187219",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.1,
+        "order_id":  "3268715"
+    },
+    {
+        "part_number":  "Q-D-C-14-64761",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.6999999999999997,
+        "order_id":  "3273576"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587471",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3141202"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3252475"
+    },
+    {
+        "part_number":  "Q-P-EKRAN SWM1B",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.05,
+        "order_id":  "3269363"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3276434"
+    },
+    {
+        "part_number":  "ZM-4.8836/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3160220"
+    },
+    {
+        "part_number":  "B-2120-618/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.5,
+        "order_id":  "3230605"
+    },
+    {
+        "part_number":  "Q-STA-PR_6139939",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3233033"
+    },
+    {
+        "part_number":  "Q-STA-PR_6181772-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3234169"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3234722"
+    },
+    {
+        "part_number":  "Q-STA-PR_6181772-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3234980"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3235084"
+    },
+    {
+        "part_number":  "Q-STA-PR_6232732",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3235092"
+    },
+    {
+        "part_number":  "Q-STA-PR_6232737",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3235093"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3235657"
+    },
+    {
+        "part_number":  "Q-STA-PR_6151029-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3236313"
+    },
+    {
+        "part_number":  "Q-STA-PR_6151029-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3236315"
+    },
+    {
+        "part_number":  "QE11.21.30.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  19.3,
+        "order_id":  "3241852"
+    },
+    {
+        "part_number":  "QE11.21.30.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  28.3,
+        "order_id":  "3241853"
+    },
+    {
+        "part_number":  "Q-ASS-6155732890",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.33,
+        "order_id":  "3256310"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931048",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3260523"
+    },
+    {
+        "part_number":  "Q-STA-PR_6034536",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.43,
+        "order_id":  "3260538"
+    },
+    {
+        "part_number":  "Q-STA-PR_6034701",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.43,
+        "order_id":  "3260539"
+    },
+    {
+        "part_number":  "Q-ALT-403110065990",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3269359"
+    },
+    {
+        "part_number":  "ZM-3.3741/84/CH/BS",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.48,
+        "order_id":  "3277096"
+    },
+    {
+        "part_number":  "Q-STA-PR_5711223",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.8200000000000001,
+        "order_id":  "3138039"
+    },
+    {
+        "part_number":  "Q-STA-PR_5714683",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.02,
+        "order_id":  "3138043"
+    },
+    {
+        "part_number":  "Q-STA-PR_6009798",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3148069"
+    },
+    {
+        "part_number":  "D-2130-626/1",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.84,
+        "order_id":  "3211013"
+    },
+    {
+        "part_number":  "QE11.13.35.01.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3229316"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.6,
+        "order_id":  "3231467"
+    },
+    {
+        "part_number":  "Q-STA-PR_6156867",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.36,
+        "order_id":  "3260603"
+    },
+    {
+        "part_number":  "C-2340-186/1",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3260943"
+    },
+    {
+        "part_number":  "D-2130-626/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.84,
+        "order_id":  "3260959"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P1-B",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.4,
+        "order_id":  "3264579"
+    },
+    {
+        "part_number":  "Q-MIK-S1-76MM-M4",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.3699999999999997,
+        "order_id":  "3268557"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553162",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8200000000000001,
+        "order_id":  "3231267"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553169",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.08,
+        "order_id":  "3231293"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P1-B",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  3.0999999999999996,
+        "order_id":  "3272924"
+    },
+    {
+        "part_number":  "Q-STA-PR_5501846-1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3138013"
+    },
+    {
+        "part_number":  "Q-STA-PR_5501846-2",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.75,
+        "order_id":  "3138017"
+    },
+    {
+        "part_number":  "Q-STA-PR_5503371-1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.6499999999999999,
+        "order_id":  "3138814"
+    },
+    {
+        "part_number":  "Q-STA-PR_5503371-2",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.6499999999999999,
+        "order_id":  "3138815"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152591",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3234703"
+    },
+    {
+        "part_number":  "Q-STA-PR_5929607-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3234931"
+    },
+    {
+        "part_number":  "Q-STA-PR_5929607-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3234932"
+    },
+    {
+        "part_number":  "Q-STA-PR_6205491",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3234989"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3235038"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3235039"
+    },
+    {
+        "part_number":  "Q-STA-PR_6146597_1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3235068"
+    },
+    {
+        "part_number":  "Q-STA-PR_6146597_2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3235069"
+    },
+    {
+        "part_number":  "Q-STA-PR_5929607-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3235549"
+    },
+    {
+        "part_number":  "Q-STA-PR_5929607-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.52,
+        "order_id":  "3235551"
+    },
+    {
+        "part_number":  "Q-STA-PR_6149733",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3236312"
+    },
+    {
+        "part_number":  "Q-STA-PR_6156229",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3260602"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2000000000000002,
+        "order_id":  "3141207"
+    },
+    {
+        "part_number":  "Q-STA-BU_2525391",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.81,
+        "order_id":  "3189635"
+    },
+    {
+        "part_number":  "B-2430-772/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.33,
+        "order_id":  "3230609"
+    },
+    {
+        "part_number":  "B-2430-772/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.63,
+        "order_id":  "3230610"
+    },
+    {
+        "part_number":  "B-2340-185/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3261078"
+    },
+    {
+        "part_number":  "Q-COR-10-054873-01",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.7,
+        "order_id":  "3263987"
+    },
+    {
+        "part_number":  "Q-STA-PR_5838730",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.72,
+        "order_id":  "3231649"
+    },
+    {
+        "part_number":  "Q-STA-PR_5844038",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.72,
+        "order_id":  "3231658"
+    },
+    {
+        "part_number":  "ZM-3.2254/1/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  5.3,
+        "order_id":  "3270214"
+    },
+    {
+        "part_number":  "ZM-3.1927/1/CH",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3273599"
+    },
+    {
+        "part_number":  "Q-BU_2007986 L150",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.36,
+        "order_id":  "3143306"
+    },
+    {
+        "part_number":  "Q-BU_2007986 L525",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3189875"
+    },
+    {
+        "part_number":  "Q-STA-PR_1992441",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44,
+        "order_id":  "3154023"
+    },
+    {
+        "part_number":  "Q-STA-BU_2117528",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  3.2,
+        "order_id":  "3167716"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275295",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  3.22,
+        "order_id":  "3210055"
+    },
+    {
+        "part_number":  "Q-STA-PR_5854706",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.26,
+        "order_id":  "3227831"
+    },
+    {
+        "part_number":  "B-2140-727/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.6000000000000005,
+        "order_id":  "3228996"
+    },
+    {
+        "part_number":  "B-2140-727/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.85,
+        "order_id":  "3229034"
+    },
+    {
+        "part_number":  "Q-STA-PR_5516048",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.16,
+        "order_id":  "3230910"
+    },
+    {
+        "part_number":  "Q-STA-PR_5576745P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1400000000000001,
+        "order_id":  "3231338"
+    },
+    {
+        "part_number":  "Q-STA-PR_5576745P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1400000000000001,
+        "order_id":  "3231347"
+    },
+    {
+        "part_number":  "Q-STA-PR_5854706",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44000000000000006,
+        "order_id":  "3231666"
+    },
+    {
+        "part_number":  "Q-STA-PR_5854706",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.94,
+        "order_id":  "3231669"
+    },
+    {
+        "part_number":  "B-2120-621/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.0,
+        "order_id":  "3237135"
+    },
+    {
+        "part_number":  "QE11.21.30.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.96,
+        "order_id":  "3241852"
+    },
+    {
+        "part_number":  "QE11.21.30.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.32,
+        "order_id":  "3241853"
+    },
+    {
+        "part_number":  "Q-D-C-13-82940/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.22,
+        "order_id":  "3265691"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194651",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.65,
+        "order_id":  "3272403"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194740",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.65,
+        "order_id":  "3272411"
+    },
+    {
+        "part_number":  "Q-STA-PR_2195063",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.65,
+        "order_id":  "3272412"
+    },
+    {
+        "part_number":  "Q-D-C-1008790",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.43000000000000005,
+        "order_id":  "3274009"
+    },
+    {
+        "part_number":  "Q-STA-PR_5899744",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.12000000000000001,
+        "order_id":  "3230785"
+    },
+    {
+        "part_number":  "Q-STA-PR_5899744",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.12000000000000001,
+        "order_id":  "3230787"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553136",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6799999999999999,
+        "order_id":  "3231250"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553159",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.72,
+        "order_id":  "3231258"
+    },
+    {
+        "part_number":  "Q-STA-PR_5991542",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.4,
+        "order_id":  "3148229"
+    },
+    {
+        "part_number":  "Q-STA-PR_2187219",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.5,
+        "order_id":  "3210014"
+    },
+    {
+        "part_number":  "Q-STA-PR_2187219",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.0,
+        "order_id":  "3210016"
+    },
+    {
+        "part_number":  "Q-STA-PR_2204155",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3238305"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194743",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.25,
+        "order_id":  "3272413"
+    },
+    {
+        "part_number":  "Q-COR-52003-112 00",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  7.19,
+        "order_id":  "3261373"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  12.31,
+        "order_id":  "3272273"
+    },
+    {
+        "part_number":  "Q-COR-NCP212025C3",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.4,
+        "order_id":  "3275214"
+    },
+    {
+        "part_number":  "Q-COR-NCP212025D1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3275216"
+    },
+    {
+        "part_number":  "Q-STA-PR_5991542",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.0,
+        "order_id":  "3148230"
+    },
+    {
+        "part_number":  "Q-STA-PR_5833925",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3131371"
+    },
+    {
+        "part_number":  "Q-STA-PR_5840018",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.9,
+        "order_id":  "3135074"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.9,
+        "order_id":  "3141913"
+    },
+    {
+        "part_number":  "Q-STA-PR_6009801",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3148081"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553175",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3209712"
+    },
+    {
+        "part_number":  "Q-STA-PR_6239238",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.43,
+        "order_id":  "3213121"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3224786"
+    },
+    {
+        "part_number":  "Q-STA-PR_6125544",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3233529"
+    },
+    {
+        "part_number":  "Q-STA-PR_6125544",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3233845"
+    },
+    {
+        "part_number":  "Q-STA-PR_6181772-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3234169"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234615"
+    },
+    {
+        "part_number":  "Q-STA-PR_5931658-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234617"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3234716"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234717"
+    },
+    {
+        "part_number":  "Q-STA-PR_6201636-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234718"
+    },
+    {
+        "part_number":  "Q-STA-PR_6204811-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3234722"
+    },
+    {
+        "part_number":  "Q-STA-PR_6042791-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3234953"
+    },
+    {
+        "part_number":  "Q-STA-PR_6042791-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3234954"
+    },
+    {
+        "part_number":  "Q-STA-PR_6042841",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.44999999999999996,
+        "order_id":  "3234955"
+    },
+    {
+        "part_number":  "Q-STA-PR_6068030-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234962"
+    },
+    {
+        "part_number":  "Q-STA-PR_6068030-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234963"
+    },
+    {
+        "part_number":  "B-2120-582/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  17.87,
+        "order_id":  "3237133"
+    },
+    {
+        "part_number":  "QE11.24.24.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3253211"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553175",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3230999"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587520",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.72,
+        "order_id":  "3231494"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587520",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.72,
+        "order_id":  "3231495"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587520",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  8.72,
+        "order_id":  "3231496"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587520",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  19.5,
+        "order_id":  "3231497"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3232221"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.1,
+        "order_id":  "3232227"
+    },
+    {
+        "part_number":  "Q-STA-PR_5976230",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  3.4299999999999997,
+        "order_id":  "3160016"
+    },
+    {
+        "part_number":  "Q-STA-PR_5701384",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3138544"
+    },
+    {
+        "part_number":  "Q-STA-PR_5915388",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.7,
+        "order_id":  "3138563"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917203",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.05,
+        "order_id":  "3138565"
+    },
+    {
+        "part_number":  "Q-STA-PR_5919097",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3138568"
+    },
+    {
+        "part_number":  "Q-STA-PR_5920196",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3138571"
+    },
+    {
+        "part_number":  "Q-STA-PR_5920542",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3138574"
+    },
+    {
+        "part_number":  "Q-STA-PR_2241808",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.56,
+        "order_id":  "3163792"
+    },
+    {
+        "part_number":  "Q-STA-PR_2241826",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.8899999999999999,
+        "order_id":  "3163793"
+    },
+    {
+        "part_number":  "Q-STA-PR_2005611",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.82,
+        "order_id":  "3167727"
+    },
+    {
+        "part_number":  "05215-5100/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3175412"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164162P1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3186564"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185807",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.2,
+        "order_id":  "3186649"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164162P1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3189953"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164162P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.62,
+        "order_id":  "3189955"
+    },
+    {
+        "part_number":  "Q-STA-PR_2197735",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.2,
+        "order_id":  "3190037"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275468",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.47,
+        "order_id":  "3190083"
+    },
+    {
+        "part_number":  "Q-STA-PR_2164162P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8600000000000001,
+        "order_id":  "3191910"
+    },
+    {
+        "part_number":  "D-2840-562/13",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.55,
+        "order_id":  "3209850"
+    },
+    {
+        "part_number":  "Q-STA-PR_5796187",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.74,
+        "order_id":  "3210245"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3230498"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917474",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.86,
+        "order_id":  "3232998"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917474",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.58,
+        "order_id":  "3232999"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917477",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.58,
+        "order_id":  "3233006"
+    },
+    {
+        "part_number":  "Q-STA-PR_5917477",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.86,
+        "order_id":  "3233007"
+    },
+    {
+        "part_number":  "Q-STA-PR_6138768",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3233018"
+    },
+    {
+        "part_number":  "Q-STA-PR_6139939",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45999999999999996,
+        "order_id":  "3233034"
+    },
+    {
+        "part_number":  "QE11.24.46.01.02",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3233197"
+    },
+    {
+        "part_number":  "Q-STA-PR_6125544",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.38,
+        "order_id":  "3236305"
+    },
+    {
+        "part_number":  "B-2120-621/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.45,
+        "order_id":  "3237135"
+    },
+    {
+        "part_number":  "B-2120-621/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.5,
+        "order_id":  "3237137"
+    },
+    {
+        "part_number":  "D-2870-798/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3237165"
+    },
+    {
+        "part_number":  "QE11.20.44.03.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.05,
+        "order_id":  "3237414"
+    },
+    {
+        "part_number":  "Q-SAT-201310.09",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  18.44,
+        "order_id":  "3246209"
+    },
+    {
+        "part_number":  "Q-D-C-14-50049",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.45,
+        "order_id":  "3255807"
+    },
+    {
+        "part_number":  "Q-BS-SKGSPAW",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.15,
+        "order_id":  "3256097"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194645",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.05,
+        "order_id":  "3272402"
+    },
+    {
+        "part_number":  "Q-BS-01_00.01.01-C",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  15.6,
+        "order_id":  "3272211"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3272273"
+    },
+    {
+        "part_number":  "Q-BS-02_02.00.00-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  13.5,
+        "order_id":  "3273121"
+    },
+    {
+        "part_number":  "Q-FID-130-17113",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.2,
+        "order_id":  "3274484"
+    },
+    {
+        "part_number":  "Q-STA-BU_5514350",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3131936"
+    },
+    {
+        "part_number":  "Q-STA-BU_5514368",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.33999999999999997,
+        "order_id":  "3131949"
+    },
+    {
+        "part_number":  "Q-STA-BU_5516722",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.5800000000000001,
+        "order_id":  "3131969"
+    },
+    {
+        "part_number":  "ZM-3.7243/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  6.01,
+        "order_id":  "3168848"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3185379"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.9,
+        "order_id":  "3186983"
+    },
+    {
+        "part_number":  "Q-STA-PR_5992885",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.54,
+        "order_id":  "3192004"
+    },
+    {
+        "part_number":  "QE11.23.00.00.42",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  3.6599999999999997,
+        "order_id":  "3223152"
+    },
+    {
+        "part_number":  "D-2410-633/1",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.76,
+        "order_id":  "3260964"
+    },
+    {
+        "part_number":  "Q-ASS-6155732890",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.33,
+        "order_id":  "3263643"
+    },
+    {
+        "part_number":  "Q-LAW-H0830P2",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3264935"
+    },
+    {
+        "part_number":  "ZM-3.1926/2/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.46,
+        "order_id":  "3270212"
+    },
+    {
+        "part_number":  "ZM-3.2254/2/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3270215"
+    },
+    {
+        "part_number":  "ZM-3.3741/64/CH",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  1.33,
+        "order_id":  "3270216"
+    },
+    {
+        "part_number":  "QE11.25.00.06.01",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3277228"
+    },
+    {
+        "part_number":  "ZM-4.8849/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.17,
+        "order_id":  "3168274"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275928-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3168839"
+    },
+    {
+        "part_number":  "QE11.22.22.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  48.46,
+        "order_id":  "3230502"
+    },
+    {
+        "part_number":  "Q-STA-PR_6115761",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3599999999999999,
+        "order_id":  "3235061"
+    },
+    {
+        "part_number":  "06350-0002/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3237112"
+    },
+    {
+        "part_number":  "D-1870-532/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.22,
+        "order_id":  "3254071"
+    },
+    {
+        "part_number":  "Q-LAW-0302881A",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.9,
+        "order_id":  "3264932"
+    },
+    {
+        "part_number":  "Q-LAW-XADPL048",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.69,
+        "order_id":  "3264938"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587559",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.98,
+        "order_id":  "3140757"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587512",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3227757"
+    },
+    {
+        "part_number":  "Q-STA-PR_5587514P2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3252476"
+    },
+    {
+        "part_number":  "Q-STA-BU_5282175",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.17,
+        "order_id":  "3126006"
+    },
+    {
+        "part_number":  "Q-STA-BU_5397322",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.71,
+        "order_id":  "3126026"
+    },
+    {
+        "part_number":  "05215-5000/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.98,
+        "order_id":  "3175410"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249100-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.6599999999999997,
+        "order_id":  "3190958"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249117-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.01,
+        "order_id":  "3190969"
+    },
+    {
+        "part_number":  "05215-5000/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.98,
+        "order_id":  "3230153"
+    },
+    {
+        "part_number":  "B-2120-562/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.6500000000000001,
+        "order_id":  "3230165"
+    },
+    {
+        "part_number":  "Q-STA-PA_4963588",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.48,
+        "order_id":  "3240777"
+    },
+    {
+        "part_number":  "Q-COR-NCP204106C6",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  19.45,
+        "order_id":  "3245641"
+    },
+    {
+        "part_number":  "ZM-3.6622/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.67,
+        "order_id":  "3266326"
+    },
+    {
+        "part_number":  "Q-BS-02_02.01.03",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.8,
+        "order_id":  "3273129"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249125",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3189766"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249115",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.7,
+        "order_id":  "3190069"
+    },
+    {
+        "part_number":  "Q-COR-NCP204106C6",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  9.88,
+        "order_id":  "3275213"
+    },
+    {
+        "part_number":  "ZM-3.7248/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.28,
+        "order_id":  "3167641"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249115",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3190068"
+    },
+    {
+        "part_number":  "Q-STA-PR_2249117-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  9.71,
+        "order_id":  "3190970"
+    },
+    {
+        "part_number":  "Q-TKH-1445.001",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  4.14,
+        "order_id":  "3261631"
+    },
+    {
+        "part_number":  "Q-TKH-1445.004",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  6.7,
+        "order_id":  "3261635"
+    },
+    {
+        "part_number":  "Q-TKH-1445.402",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  12.9,
+        "order_id":  "3261637"
+    },
+    {
+        "part_number":  "Q-ASS-6155731572",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  23.25,
+        "order_id":  "3263642"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.99,
+        "order_id":  "3141913"
+    },
+    {
+        "part_number":  "Q-STA-PR_2158323",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.75,
+        "order_id":  "3186543"
+    },
+    {
+        "part_number":  "Q-STA-PR_2158323",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.5,
+        "order_id":  "3191894"
+    },
+    {
+        "part_number":  "QE11.17.00.00.59",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3200000000000003,
+        "order_id":  "3230499"
+    },
+    {
+        "part_number":  "ZM-3.7046/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.12000000000000001,
+        "order_id":  "3233201"
+    },
+    {
+        "part_number":  "ZM-3.6621/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.24,
+        "order_id":  "3234786"
+    },
+    {
+        "part_number":  "ZM-3.7046/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.16,
+        "order_id":  "3244976"
+    },
+    {
+        "part_number":  "ZM-3.1927/1/CH",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3255878"
+    },
+    {
+        "part_number":  "Q-COR-10-054873-01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  10.7,
+        "order_id":  "3261320"
+    },
+    {
+        "part_number":  "Q-COR-10-054873-01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.45,
+        "order_id":  "3262591"
+    },
+    {
+        "part_number":  "Q-STA-PR_2194584",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  7.45,
+        "order_id":  "3272380"
+    },
+    {
+        "part_number":  "Q-BS-01_00.00.01-C",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.7,
+        "order_id":  "3272210"
+    },
+    {
+        "part_number":  "QE11.22.17.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.29000000000000004,
+        "order_id":  "3272931"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.9,
+        "order_id":  "3185379"
+    },
+    {
+        "part_number":  "Q-STA-PR_2185435",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  5.1,
+        "order_id":  "3186983"
+    },
+    {
+        "part_number":  "Q-STA-PR_6153504",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3234168"
+    },
+    {
+        "part_number":  "Q-STA-PR_6152591",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.35,
+        "order_id":  "3234417"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3234660"
+    },
+    {
+        "part_number":  "Q-STA-PR_6043745-2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3234662"
+    },
+    {
+        "part_number":  "QE11.20.07.26.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3253233"
+    },
+    {
+        "part_number":  "QE11.20.07.26.03",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3253234"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.8,
+        "order_id":  "3232221"
+    },
+    {
+        "part_number":  "Q-STA-PR_5553106",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.0,
+        "order_id":  "3232227"
+    },
+    {
+        "part_number":  "Q-STA-PR_2241814",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.56,
+        "order_id":  "3163971"
+    },
+    {
+        "part_number":  "QE11.10.27.00.06",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  3.15,
+        "order_id":  "3230485"
+    },
+    {
+        "part_number":  "QE11.11.00.00.11",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.47,
+        "order_id":  "3234761"
+    },
+    {
+        "part_number":  "ZM-3.7052/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.3,
+        "order_id":  "3244977"
+    },
+    {
+        "part_number":  "Q-COR-10-054871-01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  14.440000000000001,
+        "order_id":  "3261366"
+    },
+    {
+        "part_number":  "ZM-3.5886/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.32,
+        "order_id":  "3266323"
+    },
+    {
+        "part_number":  "ZM-3.6023/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.4,
+        "order_id":  "3266324"
+    },
+    {
+        "part_number":  "ZM-3.6391/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.8400000000000001,
+        "order_id":  "3266325"
+    },
+    {
+        "part_number":  "ZM-4.8421/8",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.78,
+        "order_id":  "3266386"
+    },
+    {
+        "part_number":  "Q-BS-01_01.01.03-A",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  7.1,
+        "order_id":  "3272215"
+    },
+    {
+        "part_number":  "Q-D-C-14-84213",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3274011"
+    },
+    {
+        "part_number":  "QE11.06.00.26.04",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.75,
+        "order_id":  "3220511"
+    },
+    {
+        "part_number":  "QE11.06.00.26.03",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.75,
+        "order_id":  "3253824"
+    },
+    {
+        "part_number":  "Q-STA-PR_5835155",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3131374"
+    },
+    {
+        "part_number":  "Q-STA-PR_5835160",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3131377"
+    },
+    {
+        "part_number":  "B-2340-182/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  12.63,
+        "order_id":  "3229128"
+    },
+    {
+        "part_number":  "Q-STA-PR_5258363",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.5,
+        "order_id":  "3118013"
+    },
+    {
+        "part_number":  "Q-STA-BU_5265697",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.22,
+        "order_id":  "3125956"
+    },
+    {
+        "part_number":  "Q-STA-BU_5395575",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  0.6,
+        "order_id":  "3125961"
+    },
+    {
+        "part_number":  "Q-STA-PR_5393572",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3137892"
+    },
+    {
+        "part_number":  "Q-STA-PR_5393572",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3137893"
+    },
+    {
+        "part_number":  "Q-STA-PR_5393442",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3137912"
+    },
+    {
+        "part_number":  "Q-STA-PR_5393442",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3137913"
+    },
+    {
+        "part_number":  "Q-STA-PR_5504400",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3137916"
+    },
+    {
+        "part_number":  "Q-STA-PR_5738777",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.1,
+        "order_id":  "3137928"
+    },
+    {
+        "part_number":  "Q-STA-PR_5742097",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.36,
+        "order_id":  "3137934"
+    },
+    {
+        "part_number":  "Q-STA-PR_5746807",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  1.36,
+        "order_id":  "3137940"
+    },
+    {
+        "part_number":  "Q-STA-PR_5504406",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  0.8999999999999999,
+        "order_id":  "3138750"
+    },
+    {
+        "part_number":  "Q-STA-PR_5751359",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.48,
+        "order_id":  "3138785"
+    },
+    {
+        "part_number":  "Q-STA-BU_5378994",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  6.8999999999999995,
+        "order_id":  "3158649"
+    },
+    {
+        "part_number":  "Q-STA-PR_2264936",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.0,
+        "order_id":  "3159945"
+    },
+    {
+        "part_number":  "Q-STA-PR_6058991",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  0.65,
+        "order_id":  "3159969"
+    },
+    {
+        "part_number":  "ZM-3.7238/1",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  21.93,
+        "order_id":  "3167416"
+    },
+    {
+        "part_number":  "Q-STA-BU_2117523",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  2.6799999999999997,
+        "order_id":  "3167496"
+    },
+    {
+        "part_number":  "Q-STA-PR_2279779",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  4.1,
+        "order_id":  "3167561"
+    },
+    {
+        "part_number":  "Q-STA-BU_6168265",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3189564"
+    },
+    {
+        "part_number":  "Q-STA-BU_6168265",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3189565"
+    },
+    {
+        "part_number":  "Q-STA-PR_2205602",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.5,
+        "order_id":  "3189597"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275298",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.1,
+        "order_id":  "3189775"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275491",
+        "week":  40,
+        "year":  2025,
+        "praca_tpz":  2.9,
+        "order_id":  "3189789"
+    },
+    {
+        "part_number":  "06339-2000/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  10.620000000000001,
+        "order_id":  "3209193"
+    },
+    {
+        "part_number":  "Q-STA-PR_2263636",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.42,
+        "order_id":  "3209702"
+    },
+    {
+        "part_number":  "B-2140-727/2",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  9.47,
+        "order_id":  "3229034"
+    },
+    {
+        "part_number":  "QE11.13.35.00.01",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.9000000000000001,
+        "order_id":  "3229248"
+    },
+    {
+        "part_number":  "06339-2000/2",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3237122"
+    },
+    {
+        "part_number":  "B-2140-708/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  15.52,
+        "order_id":  "3237140"
+    },
+    {
+        "part_number":  "D-2870-798/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  2.3,
+        "order_id":  "3237165"
+    },
+    {
+        "part_number":  "ZM-4.8819/1",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  0.5,
+        "order_id":  "3245046"
+    },
+    {
+        "part_number":  "064236-1100/1",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3260936"
+    },
+    {
+        "part_number":  "Q-LAW-0302841-P2-B",
+        "week":  39,
+        "year":  2025,
+        "praca_tpz":  6.42,
+        "order_id":  "3264580"
+    },
+    {
+        "part_number":  "Q-STA-PR_2205602",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  3.5,
+        "order_id":  "3189599"
+    },
+    {
+        "part_number":  "Q-STA-PR_2275298",
+        "week":  38,
+        "year":  2025,
+        "praca_tpz":  1.7,
+        "order_id":  "3189776"
+    },
+    {
+        "part_number":  "Q-STA-BU_5281498",
+        "week":  37,
+        "year":  2025,
+        "praca_tpz":  1.42,
+        "order_id":  "3126003"
+    }
+]

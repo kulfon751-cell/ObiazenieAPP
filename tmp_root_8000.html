@@ -1,0 +1,376 @@
+﻿
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Dostępność - dashboard</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <style>
+            :root{--bg:#0f1720;--panel:#111827;--muted:#9CA3AF;--text:#E5E7EB;--accent:#60A5FA;--good:#34D399;--bad:#EF4444}
+            body{background:var(--bg);color:var(--text);font-family:Segoe UI, Arial;margin:1rem}
+            .layout{display:grid;grid-template-rows:auto 1fr;gap:1rem}
+            header{font-size:1.6rem;font-weight:700;margin-bottom:.25rem;text-align:center;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg, rgba(52,211,153,0.06), rgba(239,68,68,0.04));color:var(--text);max-width:900px;margin:0 auto}
+            .content{display:grid;grid-template-columns:260px 1fr;gap:1rem}
+            .panel{background:var(--panel);padding:12px;border-radius:6px}
+            .slicers label{display:block;margin:.4rem 0;color:var(--muted)}
+            input[type=text], select{width:100%;padding:6px;border-radius:4px;border:1px solid #203040;background:#081018;color:var(--text)}
+            table{width:100%;border-collapse:collapse;color:var(--text);font-size:0.9rem}
+            th,td{padding:6px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+            th{color:var(--muted);font-weight:600}
+            tr:hover{background:rgba(255,255,255,0.02);cursor:pointer}
+            .kpis{display:flex;gap:8px;margin-top:8px}
+            .kpi{flex:1;padding:8px;background:#07121a;border-radius:6px;text-align:center}
+            .kpi .v{font-size:1.2rem;font-weight:700}
+            #chart{height:320px}
+            /* month dropdown open state */
+            #monthList{display:none}
+            #monthList.open{display:block}
+            /* chevron indicator */
+            .chev{display:inline-block;width:16px;text-align:center;transition:transform .18s ease;color:var(--muted);margin-right:6px}
+            .chev.open{transform:rotate(90deg);color:var(--accent)}
+            /* spinner */
+            .spinner{display:inline-block;width:18px;height:18px;border:2px solid rgba(255,255,255,0.08);border-top-color:var(--accent);border-radius:50%;animation:spin .9s linear infinite;vertical-align:middle;margin-left:6px}
+            @keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+            .parts-row td{background:transparent}
+            .parts-table{border-collapse:collapse;width:100%}
+            .parts-table th,.parts-table td{padding:6px;border-bottom:1px solid rgba(255,255,255,0.03);text-align:left}
+            /* responsive tweaks for narrow screens */
+            @media (max-width:700px){
+                .content{grid-template-columns:1fr}
+                #monthList{position:static;max-height:180px;overflow:auto}
+                /* hide columns 'Nazwa' and 'Dział' to save space */
+                #devicesTable th:nth-child(3), #devicesTable td:nth-child(3),
+                #devicesTable th:nth-child(2), #devicesTable td:nth-child(2){display:none}
+                #devicesTable th,#devicesTable td{font-size:0.85rem}
+                .kpi{font-size:0.9rem}
+                .chev{width:12px}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="layout">
+            <header>Obciążenie urządzęń - dashboard</header>
+            <div class="content">
+                <div class="panel slicers">
+                    <div class="slicer-label">Miesiąc (wybierz kilka)
+                        <div id="monthDropdown" style="position:relative">
+                            <button id="monthToggle" type="button" aria-expanded="false" style="width:100%;text-align:left;padding:6px;border-radius:4px;border:1px solid #203040;background:#081018;color:var(--text)">Wybierz miesiące</button>
+                            <div id="monthList" style="position:absolute;left:0;right:0;z-index:50;max-height:220px;overflow:auto;background:#07121a;border:1px solid #203040;padding:8px;margin-top:6px;border-radius:6px">
+                                <!-- month checkboxes inserted here -->
+                            </div>
+                            <div id="monthStatus" style="color:var(--muted);font-size:0.85rem;margin-top:6px">(status)</div>
+                        </div>
+                    </div>
+                    <button id="clearMonths" style="margin-top:6px;padding:6px 8px;background:#0b1220;border-radius:6px;border:1px solid #203040;color:var(--muted)">Wyczyść</button>
+                    <label>Dział
+                        <select id="department"><option value="__all__">Wszystkie</option></select>
+                    </label>
+                    <!-- Top N removed; show all devices -->
+                    <!-- prorated values hidden in UI by request -->
+                    <button id="refresh" style="margin-top:8px;padding:8px 10px;background:var(--accent);border-radius:6px;border:0;color:#04233a">Odśwież</button>
+                    <div class="kpis" style="margin-top:10px">
+                        <div class="kpi"><div class="t">Suma dostępności (full)</div><div id="sum_full" class="v">-</div></div>
+                        <div class="kpi"><div class="t">Suma obciążenia (full)</div><div id="load_full" class="v">-</div></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="panel" style="margin-bottom:8px">
+                        <strong>Urządzenia</strong>
+                        <div style="height:300px;overflow:auto;margin-top:8px">
+                            <table id="devicesTable">
+                                <thead><tr><th>Nr</th><th>Nazwa</th><th>Dział</th><th>Dostępność/h</th><th>Obciążenie/h</th><th>Niedobór/h</th></tr></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <canvas id="chart"></canvas>
+                    </div>
+                    <div class="panel" style="margin-top:8px">
+                        <div style="text-align:center;margin-bottom:8px;">
+                            <div style="display:inline-block;width:100%;max-width:520px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg, rgba(96,165,250,0.06), rgba(37,99,235,0.04));font-weight:700;color:var(--text)">Obciążenie wg Indeksu</div>
+                        </div>
+                        <div style="height:260px;overflow:auto;margin-top:8px">
+                            <canvas id="partsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            console.log('[ui] script start');
+            function setMonthStatus(msg){ try{ const s=document.getElementById('monthStatus'); if(s) s.textContent = msg; }catch(e){} }
+            setMonthStatus('init');
+            let myChart;
+            let partsChart;
+            try{
+                const chartEl = document.getElementById('chart');
+                if(chartEl && chartEl.getContext){
+                    const chartCtx = chartEl.getContext('2d');
+                    myChart = new Chart(chartCtx, {type:'bar',data:{labels:[],datasets:[
+                        {label:'Dostępność (h)',backgroundColor:'#34D399',borderColor:'#16A34A',borderWidth:1,data:[]},
+                        {label:'Obciążenie (h)',backgroundColor:'#EF4444',borderColor:'#B91C1C',borderWidth:1,data:[]} 
+                    ]},options:{plugins:{legend:{labels:{color:'#E5E7EB'}}},scales:{x:{ticks:{color:'#E5E7EB'}},y:{ticks:{color:'#E5E7EB'}}},maintainAspectRatio:false}});
+                }else{
+                    throw new Error('Canvas not available');
+                }
+            }catch(e){
+                console.warn('[ui] Chart init failed, continuing without chart', e);
+                setMonthStatus('chart init failed');
+                // fallback minimal chart-like object so code calling myChart.update() doesn't crash
+                myChart = { data: { labels: [], datasets: [ { data: [] }, { data: [] } ] }, update: function(){} };
+            }
+
+            // init parts chart (shows sum of praca_tpz per part)
+            try{
+                const partsEl = document.getElementById('partsChart');
+                if(partsEl && partsEl.getContext){
+                    const pCtx = partsEl.getContext('2d');
+                    partsChart = new Chart(pCtx, {type:'bar',data:{labels:[],datasets:[{label:'Czas części (h)',backgroundColor:'#60A5FA',borderColor:'#2563EB',borderWidth:1,data:[]}]},options:{plugins:{legend:{labels:{color:'#E5E7EB'}}},scales:{x:{ticks:{color:'#E5E7EB'}},y:{ticks:{color:'#E5E7EB'}}},maintainAspectRatio:false}});
+                }else{
+                    throw new Error('Parts canvas not available');
+                }
+            }catch(e){
+                console.warn('[ui] partsChart init failed, continuing without partsChart', e);
+                partsChart = { data: { labels: [], datasets: [ { data: [] } ] }, update: function(){} };
+            }
+
+            async function loadDevices(){
+                const months = Array.from(document.querySelectorAll('.month-checkbox:checked')).map(i=>i.value).filter(Boolean);
+                const tbody = document.querySelector('#devicesTable tbody');
+                // if no months selected, clear table and return
+                if(months.length===0){ tbody.innerHTML=''; return; }
+                // show spinner row while loading devices
+                tbody.innerHTML='';
+                const spinnerRow = document.createElement('tr');
+                spinnerRow.className = 'devices-spinner';
+                const spinnerTd = document.createElement('td');
+                spinnerTd.colSpan = 6;
+                spinnerTd.style.padding = '12px';
+                const sp = document.createElement('span'); sp.className = 'spinner'; spinnerTd.appendChild(sp);
+                spinnerRow.appendChild(spinnerTd);
+                tbody.appendChild(spinnerRow);
+
+                const url = `/devices?` + months.map(m=>'month='+encodeURIComponent(m)).join('&');
+                let r;
+                try{
+                    r = await fetch(url);
+                }catch(err){
+                    spinnerRow.remove();
+                    alert('Błąd ładowania urządzeń: ' + (err && err.message ? err.message : ''));
+                    return;
+                }
+                if(!r.ok){ spinnerRow.remove(); alert('Błąd ładowania urządzeń'); return }
+                const data = await r.json();
+                // remove spinner now that data arrived
+                spinnerRow.remove();
+                let sumAvail=0,sumLoad=0;
+                // show all devices
+                // UI always shows full (non-prorated) values
+                const showPr = false;
+                // sort by shortage_prorated ascending (most negative first)
+                data.sort((a,b)=> a.shortage_prorated - b.shortage_prorated);
+                // populate department select (preserve previously selected value)
+                const deptSel = document.getElementById('department');
+                const prevDept = deptSel.value;
+                const depts = new Set(["__all__"]);
+                data.forEach(x=>{ if(x.department) depts.add(x.department); });
+                deptSel.innerHTML=''; [...depts].forEach(d=>{ const o=document.createElement('option'); o.value=d; o.textContent = (d==='__all__' ? 'Wszystkie' : d); if(prevDept && d===prevDept) o.selected = true; deptSel.appendChild(o); });
+
+                const selectedDept = deptSel.value || '__all__';
+
+                const displayed = data.filter(d => selectedDept==='__all__' || d.department===selectedDept);
+                // compute min/max shortage for color scaling
+                const shortageVals = displayed.map(x => Number(x.shortage_full) || 0);
+                const minShort = shortageVals.length ? Math.min(...shortageVals) : 0;
+                const maxShort = shortageVals.length ? Math.max(...shortageVals) : 0;
+                function shortageColor(v){
+                    if(minShort === maxShort) return {css:'', bright:255};
+                    const t = ((v - minShort) / (maxShort - minShort));
+                    const r = Math.round(239 + (52 - 239) * t); // red->green interpolation
+                    const g = Math.round(68 + (211 - 68) * t);
+                    const b = Math.round(68 + (153 - 68) * t);
+                    const bright = (r*0.299 + g*0.587 + b*0.114);
+                    return { css: `rgb(${r},${g},${b})`, bright };
+                }
+
+                displayed.forEach(d=>{
+                    const tr = document.createElement('tr');
+                    // include a chevron indicator in the first column
+                    tr.innerHTML = `<td><span class="chev">▶</span> ${d.device_id}</td><td>${d.display_name||''}</td><td>${d.department||''}</td><td>${d.monthly_hours_full_sum.toFixed(1)}</td><td>${d.monthly_load_full_sum.toFixed(1)}</td><td>${d.shortage_full.toFixed(1)}</td>`;
+                    tr.onclick = async ()=>{
+                        // toggle existing expanded row for this device
+                        const next = tr.nextElementSibling;
+                        const chev = tr.querySelector('.chev');
+                        if(next && next.classList.contains('parts-row')){
+                            next.remove();
+                            if(chev) chev.classList.remove('open');
+                            return;
+                        }
+                        document.getElementById('deviceInput')?.remove();
+                        const inp=document.createElement('input'); inp.id='deviceInput'; inp.type='hidden'; inp.value=d.device_id; document.body.appendChild(inp);
+                        const monthsSel = Array.from(document.querySelectorAll('.month-checkbox:checked')).map(i=>i.value);
+                        if(monthsSel.length===0) return;
+                        loadDeviceDetails(d.device_id, monthsSel, showPr);
+
+                        // Usuń inne rozwinięte tabele
+                        document.querySelectorAll('.parts-row').forEach(e=>e.remove());
+                        // insert spinner row immediately
+                        const spinnerRow = document.createElement('tr');
+                        spinnerRow.className = 'parts-row';
+                        const spinnerTd = document.createElement('td');
+                        spinnerTd.colSpan = 6;
+                        spinnerTd.style.padding = '8px 12px';
+                        const sp = document.createElement('span'); sp.className = 'spinner'; spinnerTd.appendChild(sp);
+                        spinnerRow.appendChild(spinnerTd);
+                        tr.parentNode.insertBefore(spinnerRow, tr.nextSibling);
+                        if(chev) chev.classList.add('open');
+
+                        const partsUrl = `/device_parts/${encodeURIComponent(d.device_id)}?` + monthsSel.map(m=>'month='+encodeURIComponent(m)).join('&');
+                        try{
+                            const partsResp = await fetch(partsUrl);
+                            if(!partsResp.ok){ throw new Error('Błąd ładowania części'); }
+                            const parts = await partsResp.json();
+                            // remove spinner row
+                            spinnerRow.remove();
+                            // ensure chronological order: sort by year then week (ascending)
+                            try{ parts.sort((a,b)=> (a.year - b.year) || (a.week - b.week)); }catch(e){ console.warn('[ui] parts sort failed', e); }
+                            if(!parts || parts.length === 0){
+                                // show no-data message
+                                const msgRow = document.createElement('tr');
+                                msgRow.className = 'parts-row';
+                                const mtd = document.createElement('td'); mtd.colSpan = 6; mtd.style.padding='8px 12px'; mtd.textContent = 'Brak części dla wybranego okresu';
+                                msgRow.appendChild(mtd);
+                                tr.parentNode.insertBefore(msgRow, tr.nextSibling);
+                                return;
+                            }
+
+                            // build inner table markup
+                            const partsTable = document.createElement('table');
+                            partsTable.className = 'parts-table';
+                            partsTable.style.margin = '8px 0';
+                            partsTable.style.background = '#07121a';
+                            partsTable.style.borderRadius = '6px';
+                            partsTable.style.width = '100%';
+                            partsTable.innerHTML = `<thead><tr><th>Numer części</th><th>ID zlecenia</th><th>Tydzień</th><th>Rok</th><th>Obciążenie</th></tr></thead><tbody></tbody>`;
+                            parts.forEach(p => {
+                                const row = document.createElement('tr');
+                                row.innerHTML = `<td>${p.part_number}</td><td>${p.order_id||''}</td><td>${p.week}</td><td>${p.year}</td><td>${(p.praca_tpz||0).toFixed(1)}</td>`;
+                                partsTable.querySelector('tbody').appendChild(row);
+                            });
+
+                            // update partsChart: aggregate total praca_tpz per part_number
+                            try{
+                                const agg = {};
+                                parts.forEach(p => { const key = p.part_number || '(unknown)'; agg[key] = (agg[key] || 0) + (Number(p.praca_tpz) || 0); });
+                                // sort entries by aggregated value descending (largest -> smallest)
+                                const entries = Object.entries(agg).sort((a,b)=> (b[1] || 0) - (a[1] || 0));
+                                const labels = entries.map(e => e[0]);
+                                const values = entries.map(e => e[1]);
+                                partsChart.data.labels = labels;
+                                partsChart.data.datasets[0].data = values;
+                                partsChart.update();
+                            }catch(e){ console.warn('[ui] update partsChart failed', e); }
+
+                            // insert a new table row below the clicked row with colspan to span the devices table
+                            const partsRow = document.createElement('tr');
+                            partsRow.className = 'parts-row';
+                            const td = document.createElement('td');
+                            td.colSpan = 6;
+                            td.style.padding = '8px 12px';
+                            td.appendChild(partsTable);
+                            partsRow.appendChild(td);
+                            tr.parentNode.insertBefore(partsRow, tr.nextSibling);
+                        }catch(err){
+                            spinnerRow.remove();
+                            if(chev) chev.classList.remove('open');
+                            alert(err.message || 'Błąd ładowania części');
+                        }
+                    };
+                    tbody.appendChild(tr);
+                    // color the shortage cell
+                    try{
+                        const td = tr.querySelector('td:last-child');
+                        const val = Number(d.shortage_full) || 0;
+                        const c = shortageColor(val);
+                        if(td){ td.style.background = c.css; td.style.color = (c.bright < 140 ? 'white' : 'black'); }
+                    }catch(e){ }
+                    sumAvail += d.monthly_hours_full_sum; sumLoad += d.monthly_load_full_sum;
+                });
+                document.getElementById('sum_full').textContent = sumAvail.toFixed(1);
+                document.getElementById('load_full').textContent = sumLoad.toFixed(1);
+            }
+
+            async function loadDeviceDetails(device, months, showPr){
+                const url = `/availability/${encodeURIComponent(device)}?` + months.map(m=>'month='+encodeURIComponent(m)).join('&');
+                const r = await fetch(url);
+                if(!r.ok){ alert('Błąd ładowania szczegółów'); return }
+                const data = await r.json();
+                // sort weeks by year/week
+                const weeks = (data.weekly || []).slice().sort((a,b)=> (a.iso_year - b.iso_year) || (a.week_number - b.week_number));
+                const labels = weeks.map(w=> w.iso_year + '-' + String(w.week_number).padStart(2,'0'));
+                const avail = weeks.map(w=> (w.hours||0));
+                const load = weeks.map(w=> (w.load_hours||0));
+                myChart.data.labels = labels; myChart.data.datasets[0].data = avail; myChart.data.datasets[1].data = load; myChart.update();
+            }
+
+            // populate month checkbox list with +/-12 months around current month (defensive)
+            (function(){
+                try{
+                    console.log('[ui] init month list');
+                    setMonthStatus('initializing month list');
+                    const list = document.getElementById('monthList');
+                    const toggle = document.getElementById('monthToggle');
+                    if(!list){ console.error('[ui] monthList element not found'); return; }
+                    const now = new Date();
+                    const defaultVal = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+                    const start = new Date(now.getFullYear(), now.getMonth()-12, 1);
+                    for(let i=0;i<25;i++){
+                        const d = new Date(start.getFullYear(), start.getMonth()+i, 1);
+                        const val = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
+                        if (val.startsWith('2024-')) continue; // pomiń wszystkie miesiące z 2024
+                        const id = 'm_' + i;
+                        const wrapper = document.createElement('div');
+                        wrapper.style.display = 'inline-flex';
+                        wrapper.style.alignItems = 'center';
+                        wrapper.style.marginRight = '12px';
+                        wrapper.style.marginBottom = '6px';
+                        const chk = document.createElement('input'); chk.type='checkbox'; chk.className='month-checkbox'; chk.id = id; chk.value = val;
+                        const lbl = document.createElement('label'); lbl.htmlFor = id; lbl.style.marginLeft='8px'; lbl.style.color='var(--text)'; lbl.textContent = val;
+                        chk.onchange = ()=>{ updateMonthToggleText(); loadDevices(); };
+                        wrapper.appendChild(chk); wrapper.appendChild(lbl);
+                        list.appendChild(wrapper);
+                    }
+                    function updateMonthToggleText(){
+                        const sel = Array.from(document.querySelectorAll('.month-checkbox:checked')).map(i=>i.value);
+                        toggle.textContent = sel.length ? sel.join(', ') : 'Wybierz miesiące';
+                    }
+                    // toggle dropdown (use class toggle + ARIA)
+                    try{ toggle.addEventListener('click', (e)=>{ e.stopPropagation(); const l = document.getElementById('monthList'); l.classList.toggle('open'); toggle.setAttribute('aria-expanded', l.classList.contains('open')); }); }catch(e){ console.warn('[ui] addEventListener failed for monthToggle', e); }
+                    // close when clicking outside the dropdown
+                    document.addEventListener('click', (e)=>{ const dd = document.getElementById('monthDropdown'); if(!dd.contains(e.target)) { const l = document.getElementById('monthList'); l.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); } });
+                    // initialize button text
+                    updateMonthToggleText();
+                    // clear button
+                    document.getElementById('clearMonths').onclick = (e)=>{ e.stopPropagation(); document.querySelectorAll('.month-checkbox').forEach(c=>c.checked=false); updateMonthToggleText(); loadDevices(); };
+                    // if nothing was inserted, show a helpful message
+                    if(list.children.length === 0){
+                        const m = document.createElement('div'); m.style.color='var(--muted)'; m.textContent = 'Brak dostępnych miesięcy'; list.appendChild(m);
+                        setMonthStatus('no months inserted');
+                    }else{
+                        setMonthStatus('months loaded');
+                    }
+                }catch(err){
+                    console.error('[ui] error initializing month list', err);
+                    setMonthStatus('error initializing months: ' + (err && err.message ? err.message : ''));
+                    try{ const list = document.getElementById('monthList'); if(list){ list.innerHTML = '<div style="color:var(--muted)">Błąd inicjalizacji listy miesięcy: ' + (err && err.message ? err.message : '') + '</div>'; } }catch(e){}
+                }
+            })();
+            document.getElementById('refresh').onclick = loadDevices;
+            document.getElementById('department').onchange = loadDevices;
+            // initial load
+            loadDevices();
+        </script>
+    </body>
+</html>
+

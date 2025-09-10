@@ -1,0 +1,16 @@
+Opis pliku Raport_dane
+
+- zakładka DaneAPS, to dane importowane z innego źródła, moja baza
+- zakładka Dane Dostępność, pokazuje ilość dostępnych godzin w tygodniu dla danego urządzenia (Dostępność bazowa (rbg),
+dział to grupa do której należy urządzenie, Grupa zasobów to konkretne urządzenie.
+- zakładka DostepnoscPomocnicza pokazuje w sumie to samo co Dane Dostępność ale bez nazwy działu
+- zakładka DostepnoscBazowa pokazuje dostępność urządzeń w danym tygodniu
+- zakładka SlownikDostepnosci to w sumie to samo co Dane Dostępność
+- Zakładka RaportProdukcja, to jest to co najbardziej nas interesuje. 
+Najważniejsze kolumny dla mnie to:
+*Numer części to indeks produktu,
+*Produkt to nazwa produktu
+*Termin realizacji
+*Nr op. to numer operacji w marszrucie
+*Ilość pozostała to ile zostało nam jeszcze do wyprodukowania (ważne w kontekście obciążenia)
+*Praca + TPZ mówi nam ile czasu zajmie nam wyprodukowanie danego indeksu w danym kroku. Jest to łączny przewidywany czas produkcji wszystkich zaplanowanych sztuk + czas przezbrojenia maszyny total. Czyli tak naprawdę to jest nasze obciążenie.
