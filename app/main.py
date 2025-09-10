@@ -26,8 +26,9 @@ def _resolve_path_from_env(varname: str, default_path: pathlib.Path) -> pathlib.
     except Exception:
         return default_path
 
-DEFAULT_DATA = pathlib.Path(__file__).resolve().parent.parent / 'DostepnoscWTygodniach.xlsx'
-DEFAULT_PROD = pathlib.Path(__file__).resolve().parent.parent / 'Raport_dane.xlsx'
+# Default files: prefer network share on NAS1 (can still be overridden via env vars)
+DEFAULT_DATA = pathlib.Path(r"\\nas1\PRODUKCJA\DostepnoscWTygodniach.xlsx")
+DEFAULT_PROD = pathlib.Path(r"\\nas1\PRODUKCJA\Raport_dane.xlsx")
 
 DATA_FILE = _resolve_path_from_env('DATA_FILE_PATH', DEFAULT_DATA)
 PROD_FILE = _resolve_path_from_env('PROD_FILE_PATH', DEFAULT_PROD)

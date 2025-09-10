@@ -5,9 +5,15 @@ names: semicolon-separated unique NazwaUrz. values or empty if none.
 import pandas as pd
 import pathlib
 import sys
+import os
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-INPUT = ROOT / 'Scalanie17.xlsx'
+# allow overriding via env var SCALANIE_FILE_PATH, otherwise use NAS share
+_env_val = os.environ.get('SCALANIE_FILE_PATH')
+if _env_val:
+    INPUT = pathlib.Path(_env_val)
+else:
+    INPUT = pathlib.Path(r"\\nas1\PRODUKCJA\Scalanie17.xlsx")
 OUTPUT = ROOT / 'scalanie_group_name.csv'
 
 if not INPUT.exists():
