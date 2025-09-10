@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Query, Body
+from fastapi import FastAPI, HTTPException, Query, Body, UploadFile, File
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 from typing import List, Optional
@@ -32,6 +32,15 @@ DEFAULT_PROD = pathlib.Path(r"\\nas1\PRODUKCJA\Raport_dane.xlsx")
 
 DATA_FILE = _resolve_path_from_env('DATA_FILE_PATH', DEFAULT_DATA)
 PROD_FILE = _resolve_path_from_env('PROD_FILE_PATH', DEFAULT_PROD)
+
+# Directory where users can upload local copies if they don't have UNC access
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+UPLOAD_DIR = ROOT / 'uploaded'
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+# Filenames for uploaded overrides
+UPLOADED_PROD_NAME = 'Raport_dane.xlsx'
+UPLOADED_DATA_NAME = 'DostepnoscWTygodniach.xlsx'
 
 app = FastAPI(title="Dostępność urządzeń")
 
@@ -223,11 +232,14 @@ _group_map_mtime = None
 def load_data(force: bool = False) -> pd.DataFrame:
     """Load availability data from DostepnoscWTygodniach.xlsx and normalize columns."""
     global _cache_df, _cache_mtime
-    if not DATA_FILE.exists():
-        raise FileNotFoundError(f"Brak pliku: {DATA_FILE}")
-    mtime = DATA_FILE.stat().st_mtime
+    # prefer uploaded file if present
+    uploaded = UPLOAD_DIR / UPLOADED_DATA_NAME
+    source = uploaded if uploaded.exists() else DATA_FILE
+    if not source.exists():
+        raise FileNotFoundError(f"Brak pliku: {source}")
+    mtime = source.stat().st_mtime
     if force or _cache_df is None or _cache_mtime != mtime:
-        df = pd.read_excel(DATA_FILE)
+        df = pd.read_excel(source)
         lc = {c.lower(): c for c in df.columns}
         device_col = next((lc[k] for k in lc if k in ['device', 'urzadzenie', 'grupa zasobów', 'grupa_zasobow', 'grupa zasobow', 'resource', 'maszyna']), None)
         if device_col is None:
@@ -252,11 +264,14 @@ def load_data(force: bool = False) -> pd.DataFrame:
 def load_production_data(force: bool = False) -> pd.DataFrame:
     """Load and aggregate production data from sheet 'RaportProdukcja' into group/year/week sums."""
     global _prod_cache_df, _prod_cache_mtime
-    if not PROD_FILE.exists():
-        raise FileNotFoundError(f"Brak pliku produkcji: {PROD_FILE}")
-    mtime = PROD_FILE.stat().st_mtime
+    # prefer uploaded production file if present
+    uploaded = UPLOAD_DIR / UPLOADED_PROD_NAME
+    source = uploaded if uploaded.exists() else PROD_FILE
+    if not source.exists():
+        raise FileNotFoundError(f"Brak pliku produkcji: {source}")
+    mtime = source.stat().st_mtime
     if force or _prod_cache_df is None or _prod_cache_mtime != mtime:
-        pdf = pd.read_excel(PROD_FILE, sheet_name='RaportProdukcja')
+        pdf = pd.read_excel(source, sheet_name='RaportProdukcja')
         lc = {c.lower(): c for c in pdf.columns}
         group_col = next((lc[k] for k in lc if 'grupa' in k and 'zasob' in k), None)
         if group_col is None:
