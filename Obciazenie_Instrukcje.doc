@@ -1,0 +1,75 @@
+Instrukcja: Aplikacja „Obciążenie"
+
+Dokument zawiera: 1) Szablon e-mail dla deweloperów (pull + uruchomienie dev), 2) Instrukcja dla użytkowników końcowych (portable, bez admin), 3) Szybkie debugowanie.
+
+---
+1) Szablon e‑mail dla deweloperów (pull + run)
+
+Temat: Aktualizacja aplikacji Obciążenie — jak pobrać i uruchomić lokalnie
+
+Treść:
+Cześć,
+W repo jest nowa wersja aplikacji Obciążenie. Aby pobrać i uruchomić lokalnie:
+
+1) Otwórz PowerShell w katalogu projektu:
+Set-Location 'C:\ścieżka\do\projektu'
+
+2) Aktywuj virtualenv:
+& .venv\Scripts\Activate.ps1
+
+3) Pobierz zmiany z GitHub i zaktualizuj lokalną gałąź:
+git pull origin main
+
+4) Zainstaluj zależności (jeśli potrzebne):
+pip install -r .\app\requirements.txt
+
+5) (Jeśli dane są na udziale sieciowym) ustaw sesyjnie ścieżki do plików:
+$env:PROD_FILE_PATH='\\nas1\Planowanie\Raport_dane.xlsx'
+$env:DATA_FILE_PATH='\\nas1\Planowanie\DostepnoscWTygodniach.xlsx'
+
+6) Uruchom serwer w trybie deweloperskim (autoreload):
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8001
+
+7) Otwórz w przeglądarce: http://127.0.0.1:8001/
+
+Kontakt: jeśli coś nie działa, wyślij logi z terminala i informację czy pliki danych są na lokalnym dysku czy UNC.
+
+---
+2) Instrukcja dla użytkowników końcowych — prosty deploy bez admina (portable)
+
+Skrócone kroki do wysłania użytkownikom lub umieszczenia w intranecie.
+
+1) Pobierz ZIP „ObciazenieApp_installer_bundle.zip” z repo/udostępnionego miejsca i rozpakuj do folderu użytkownika, np.:
+Rozpakuj do: %LOCALAPPDATA%\ObciazenieApp
+
+2) Otwórz PowerShell (bez admina) i uruchom aplikację (przykład zakłada rozpakowane do %LOCALAPPDATA%):
+# opcjonalnie ustaw ścieżki do plików danych (sesyjnie)
+$env:PROD_FILE_PATH='\\nas1\Planowanie\Raport_dane.xlsx'
+$env:DATA_FILE_PATH='\\nas1\Planowanie\DostepnoscWTygodniach.xlsx'
+
+# uruchomienie aplikacji (tworzy okno konsoli)
+Start-Process -FilePath "$env:LOCALAPPDATA\ObciazenieApp\ObciazenieApp.exe"
+
+Alternatywa: uruchom `start_portable.bat` w rozpakowanym folderze (skrypt ustawia env vars i otwiera przeglądarkę).
+
+3) Po uruchomieniu aplikacji powinna otworzyć się przeglądarka pod adresem wskazanym przez program (zwykle http://127.0.0.1:8001).
+
+Uwagi:
+- Użytkownik uruchamia proces swoim kontem — musi mieć prawo odczytu do udziału sieciowego (UNC). Jeśli dane są na udziale, upewnij się, że możesz je otworzyć w Eksploratorze Windows.
+- Jeśli chcesz, by aplikacja startowała automatycznie po logowaniu, użyj skryptu `install_per_user.ps1` z folderu `installers/` (instrukcja w README_NONADMIN.md).
+
+---
+3) Szybkie kroki debugowania (jeżeli coś nie działa)
+
+- Sprawdź logi w oknie konsoli uruchamiającego serwer (błędy importów/stack trace).
+- Sprawdź czy port 8001 jest wolny:
+Get-NetTCPConnection -LocalPort 8001 -ErrorAction SilentlyContinue
+
+- Sprawdź dostępność plików danych:
+Test-Path '\\nas1\Planowanie\Raport_dane.xlsx'
+Test-Path '\\nas1\Planowanie\DostepnoscWTygodniach.xlsx'
+
+- Jeśli aplikacja działa, ale nazwy urządzeń się nie pokazują — najczęściej brak dostępu do pliku `Raport_dane.xlsx` lub niewłaściwa ścieżka. Ustaw `PROD_FILE_PATH` i zrestartuj serwer.
+
+---
+Kontakt do dewelopera: podaj logi (z konsoli) i informację, czy pliki danych są dostępne lokalnie czy przez UNC. 
