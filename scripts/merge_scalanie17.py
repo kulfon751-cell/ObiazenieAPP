@@ -16,16 +16,24 @@ else:
     INPUT = pathlib.Path(r"\\nas1\PRODUKCJA\Scalanie17.xlsx")
 OUTPUT = ROOT / 'scalanie_group_name.csv'
 
+def write_empty():
+    empty = pd.DataFrame(columns=['group', 'names'])
+    empty.to_csv(OUTPUT, index=False, encoding='utf-8-sig')
+    print(f'Zapisano pusty plik: {OUTPUT}')
+
+# jeśli brak pliku -> zapisz pusty CSV i zakończ bez błędu
 if not INPUT.exists():
-    print(f"Plik nie istnieje: {INPUT}")
-    sys.exit(2)
+    print(f"Ostrzeżenie: plik nie istnieje: {INPUT}")
+    write_empty()
+    sys.exit(0)
 
 # read first sheet
 try:
     df = pd.read_excel(INPUT)
 except Exception as e:
     print('Błąd odczytu pliku:', e)
-    sys.exit(3)
+    write_empty()
+    sys.exit(0)
 
 # normalize columns to lower
 cols = {c.lower(): c for c in df.columns}
@@ -56,7 +64,8 @@ if name_col is None:
 
 if group_col is None:
     print('Nie znaleziono kolumny z Grupą zasobów w pliku.')
-    sys.exit(4)
+    write_empty()
+    sys.exit(0)
 
 # ensure columns exist in df
 grp_series = df[group_col].astype(str).str.strip()
@@ -71,8 +80,11 @@ out = (
     .apply(lambda s: ';'.join(sorted({v for v in s if v and str(v).strip().lower() not in ['nan','none']})))
     .reset_index()
 )
-# replace empty strings with empty (already empty)
-out['name'] = out['name'].replace({'': ''})
+# ensure column name 'names' as documented
+out = out.rename(columns={'name': 'names'})
+
+# normalize empty strings
+out['names'] = out['names'].replace({'': ''})
 
 out.to_csv(OUTPUT, index=False, encoding='utf-8-sig')
 print(f'Zapisano: {OUTPUT}')
