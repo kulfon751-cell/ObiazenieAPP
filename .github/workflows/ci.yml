@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests:
+    name: Run tests (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest pandas openpyxl
+      - name: Run pytest
+        run: python -m pytest -q
+
+  build-windows:
+    name: Build portable exe (Windows)
+    runs-on: windows-2022
+    needs: tests
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pyinstaller pandas openpyxl
+      - name: Run PyInstaller build
+        run: |
+          cd "${{ github.workspace }}"
+          # create .venv to isolate build tools
+          python -m venv .venv
+          .\.venv\Scripts\Activate.ps1 ; python -m pip install --upgrade pip pyinstaller
+          .\.venv\Scripts\Activate.ps1 ; python -m PyInstaller --clean --onefile --noconfirm --name ObciazenieApp launcher.py --add-data "Raport_dane.xlsx;." --add-data "DostepnoscWTygodniach.xlsx;." --add-data "Scalanie17.xlsx;."
+      - name: Upload exe artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ObciazenieApp-windows
+          path: dist\ObciazenieApp.exe

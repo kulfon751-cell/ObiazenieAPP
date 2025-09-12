@@ -80,9 +80,9 @@ def main(input_path: Optional[str] = None, output_path: Optional[str] = None) ->
     OUTPUT = pathlib.Path(output_path) if output_path else DEFAULT_OUTPUT
 
     if not INPUT.exists():
-        print(f"Ostrzeżenie: plik nie istnieje: {INPUT}")
-        write_empty_csv(OUTPUT)
-        return pd.DataFrame(columns=["group", "names"])
+            print(f"Scalanie file not found: {INPUT}")
+            write_empty_csv(OUTPUT)
+            return pd.DataFrame(columns=["NazwaUrz.", "Grupa"])
 
     df = read_source_excel(INPUT)
     if df is None:
@@ -101,4 +101,8 @@ def main(input_path: Optional[str] = None, output_path: Optional[str] = None) ->
     return out
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) >= 3:
+        main(sys.argv[1], sys.argv[2])
+    else:
+        print("Usage: merge_scalanie17.py <Scalanie17.xlsx> <out.csv>")

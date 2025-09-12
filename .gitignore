@@ -1,6 +1,35 @@
 ﻿# Python
 __pycache__/
 *.py[cod]
+.Python
+
+# virtualenv
+.venv/
+venv/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# installers / portable
+installers/portable/
+
+# local data files
+scalanie_group_name.csv
+Raport_dane.xlsx
+DostepnoscWTygodniach.xlsx
+Scalanie17.xlsx
+
+# IDE
+.vscode/
+.idea/
+
+# logs
+*.log
+# Python
+__pycache__/
+*.py[cod]
 *.egg-info/
 dist/
 build/
