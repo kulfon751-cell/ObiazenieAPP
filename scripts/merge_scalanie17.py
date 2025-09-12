@@ -29,14 +29,33 @@ def write_empty_csv(output: pathlib.Path) -> None:
     print(f"Zapisano pusty plik: {output}")
 
 def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
+    """Read Excel file defensively. If there are multiple sheets, concat them vertically.
+    Returns None on failure.
+    """
     try:
-        return pd.read_excel(path, engine="openpyxl")
+        # read all sheets -> dict of DataFrames
+        data = pd.read_excel(path, engine="openpyxl", sheet_name=None)
     except Exception as e:
         print(f"Błąd odczytu pliku: {e}")
         return None
+    if isinstance(data, dict):
+        # concat sheets that have at least one column
+        dfs = [df for df in data.values() if isinstance(df, pd.DataFrame) and df.shape[1] > 0]
+        if not dfs:
+            return pd.DataFrame()
+        try:
+            return pd.concat(dfs, ignore_index=True, sort=False)
+        except Exception as e:
+            print(f"Błąd łączenia arkuszy: {e}")
+            return None
+    if isinstance(data, pd.DataFrame):
+        return data
+    return None
 
 def find_columns(df: pd.DataFrame) -> tuple[Optional[str], Optional[str]]:
-    low_map = {c.lower(): c for c in df.columns}
+    # normalize column names to strings
+    cols = [str(c) for c in df.columns]
+    low_map = {c.lower(): orig for c, orig in zip(cols, df.columns)}
     group_col = None
     for k, orig in low_map.items():
         if "grupa" in k and "zasob" in k:
@@ -60,9 +79,10 @@ def find_columns(df: pd.DataFrame) -> tuple[Optional[str], Optional[str]]:
     return group_col, name_col
 
 def build_output(df: pd.DataFrame, group_col: str, name_col: Optional[str]) -> pd.DataFrame:
-    grp = df[group_col].astype(str).str.strip()
-    if name_col:
-        names = df[name_col].astype(str).str.strip()
+    # coerce to string and strip; handle missing columns gracefully
+    grp = df.get(group_col, pd.Series([None] * len(df))).astype(object).fillna("").astype(str).str.strip()
+    if name_col and name_col in df.columns:
+        names = df.get(name_col, pd.Series([""] * len(df))).astype(object).fillna("").astype(str).str.strip()
     else:
         names = pd.Series([""] * len(df))
     out = (
@@ -78,14 +98,19 @@ def build_output(df: pd.DataFrame, group_col: str, name_col: Optional[str]) -> p
 def main(input_path: Optional[str] = None, output_path: Optional[str] = None) -> pd.DataFrame:
     INPUT = detect_input(input_path)
     OUTPUT = pathlib.Path(output_path) if output_path else DEFAULT_OUTPUT
-
     if not INPUT.exists():
-            print(f"Scalanie file not found: {INPUT}")
-            write_empty_csv(OUTPUT)
-            return pd.DataFrame(columns=["NazwaUrz.", "Grupa"])
+        print(f"Scalanie file not found: {INPUT}")
+        write_empty_csv(OUTPUT)
+        return pd.DataFrame(columns=["group", "names"])
 
     df = read_source_excel(INPUT)
     if df is None:
+        write_empty_csv(OUTPUT)
+        return pd.DataFrame(columns=["group", "names"])
+
+    # if empty DataFrame after reading sheets
+    if isinstance(df, pd.DataFrame) and df.shape[0] == 0:
+        print("Plik zawiera puste arkusze lub brak danych.")
         write_empty_csv(OUTPUT)
         return pd.DataFrame(columns=["group", "names"])
 
@@ -96,8 +121,13 @@ def main(input_path: Optional[str] = None, output_path: Optional[str] = None) ->
         return pd.DataFrame(columns=["group", "names"])
 
     out = build_output(df, group_col, name_col)
-    out.to_csv(OUTPUT, index=False, encoding="utf-8-sig")
-    print(f"Zapisano: {OUTPUT}")
+    try:
+        out.to_csv(OUTPUT, index=False, encoding="utf-8-sig")
+        print(f"Zapisano: {OUTPUT}")
+    except Exception as e:
+        print(f"Błąd zapisu pliku CSV: {e}")
+        # attempt to write an empty CSV as fallback
+        write_empty_csv(OUTPUT)
     return out
 
 if __name__ == "__main__":
