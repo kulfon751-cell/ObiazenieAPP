@@ -10,12 +10,33 @@ jobs:
   tests:
     name: Run tests (Linux)
     runs-on: ubuntu-latest
+    env:
+      DATA_FILE_PATH: ${{ github.workspace }}/DostepnoscWTygodniach.xlsx
+      PROD_FILE_PATH: ${{ github.workspace }}/Raport_dane.xlsx
+      SCALANIE_FILE_PATH: ${{ github.workspace }}/Scalanie17.xlsx
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+      - name: Create sample Excel fixtures
+        run: |
+          python - <<'PY'
+          import pandas as pd
+          # DostepnoscWTygodniach.xlsx - minimal availability data
+          df = pd.DataFrame({'device':['A1'],'week':[1],'year':[2025],'hours':[40]})
+          df.to_excel('DostepnoscWTygodniach.xlsx', index=False)
+          # Raport_dane.xlsx - production report with RaportProdukcja and GrupaZasobow sheets
+          prod = pd.DataFrame({'Grupa Zasobów':['A1'],'NazwaUrz.':['Dev'],'week':[1],'year':[2025],'praca_tpz':[10]})
+          gm = pd.DataFrame({'Grupa Zasobów':['A1'],'Dzial':['Dept1']})
+          with pd.ExcelWriter('Raport_dane.xlsx') as w:
+              prod.to_excel(w, sheet_name='RaportProdukcja', index=False)
+              gm.to_excel(w, sheet_name='GrupaZasobow', index=False)
+          # Scalanie17.xlsx
+          sc = pd.DataFrame({'Grupa Zasobów':['A1'],'NazwaUrz.':['Dev']})
+          sc.to_excel('Scalanie17.xlsx', index=False)
+          PY
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
