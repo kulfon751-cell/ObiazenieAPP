@@ -14,3 +14,8 @@ venv/
 .DS_Store
 ObciazenieApp/
 ObciazenieApp.exe
+scalanie_group_name.csv
+*.parquet
+.install/
+installers/portable/
+*.spec

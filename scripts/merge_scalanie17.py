@@ -1,90 +1,104 @@
 """Merge 'Grupa Zasobów' with 'NazwaUrz.' from Scalanie17.xlsx.
-Produces scalanie_group_name.csv at repo root with columns: group, names
-names: semicolon-separated unique NazwaUrz. values or empty if none.
+Generuje scalanie_group_name.csv (kolumny: group,names) z unikalnymi nazwami (semicolon).
+Przy braku pliku lub kolumn tworzy pusty CSV.
+Można wywołać jako moduł (main()) w testach.
+Env override: SCALANIE_FILE_PATH.
 """
+from __future__ import annotations
 import pandas as pd
 import pathlib
-import sys
 import os
+from typing import Optional
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-# allow overriding via env var SCALANIE_FILE_PATH, otherwise use NAS share
-_env_val = os.environ.get('SCALANIE_FILE_PATH')
-if _env_val:
-    INPUT = pathlib.Path(_env_val)
-else:
-    INPUT = pathlib.Path(r"\\nas1\PRODUKCJA\Scalanie17.xlsx")
-OUTPUT = ROOT / 'scalanie_group_name.csv'
+DEFAULT_INPUT = pathlib.Path(r"\\nas1\PRODUKCJA\Scalanie17.xlsx")
+DEFAULT_OUTPUT = ROOT / "scalanie_group_name.csv"
 
-def write_empty():
-    empty = pd.DataFrame(columns=['group', 'names'])
-    empty.to_csv(OUTPUT, index=False, encoding='utf-8-sig')
-    print(f'Zapisano pusty plik: {OUTPUT}')
+EXCLUDE_STR = {"nan", "none"}
 
-# jeśli brak pliku -> zapisz pusty CSV i zakończ bez błędu
-if not INPUT.exists():
-    print(f"Ostrzeżenie: plik nie istnieje: {INPUT}")
-    write_empty()
-    sys.exit(0)
+def detect_input(path_override: Optional[str] = None) -> pathlib.Path:
+    env_val = os.environ.get("SCALANIE_FILE_PATH")
+    if path_override:
+        return pathlib.Path(path_override)
+    if env_val:
+        return pathlib.Path(env_val)
+    return DEFAULT_INPUT
 
-# read first sheet
-try:
-    df = pd.read_excel(INPUT)
-except Exception as e:
-    print('Błąd odczytu pliku:', e)
-    write_empty()
-    sys.exit(0)
+def write_empty_csv(output: pathlib.Path) -> None:
+    pd.DataFrame(columns=["group", "names"]).to_csv(output, index=False, encoding="utf-8-sig")
+    print(f"Zapisano pusty plik: {output}")
 
-# normalize columns to lower
-cols = {c.lower(): c for c in df.columns}
-# find group column
-group_col = None
-for k, orig in cols.items():
-    if 'grupa' in k and 'zasob' in k:
-        group_col = orig
-        break
-if group_col is None:
-    # try approximate
-    for k, orig in cols.items():
-        if 'grupa' in k:
+def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
+    try:
+        return pd.read_excel(path, engine="openpyxl")
+    except Exception as e:
+        print(f"Błąd odczytu pliku: {e}")
+        return None
+
+def find_columns(df: pd.DataFrame) -> tuple[Optional[str], Optional[str]]:
+    low_map = {c.lower(): c for c in df.columns}
+    group_col = None
+    for k, orig in low_map.items():
+        if "grupa" in k and "zasob" in k:
             group_col = orig
             break
-
-# find name column
-name_col = None
-for k, orig in cols.items():
-    if 'nazwa' in k and ('urz' in k or 'urz.' in k or 'urzad' in k or 'urząd' in k):
-        name_col = orig
-        break
-if name_col is None:
-    for k, orig in cols.items():
-        if 'nazwa' in k or 'urz' in k or 'urzad' in k:
+    if not group_col:
+        for k, orig in low_map.items():
+            if "grupa" in k:
+                group_col = orig
+                break
+    name_col = None
+    for k, orig in low_map.items():
+        if "nazwa" in k and ("urz" in k or "urz." in k or "urzad" in k or "urząd" in k):
             name_col = orig
             break
+    if not name_col:
+        for k, orig in low_map.items():
+            if any(x in k for x in ["nazwa", "urz", "urzad"]):
+                name_col = orig
+                break
+    return group_col, name_col
 
-if group_col is None:
-    print('Nie znaleziono kolumny z Grupą zasobów w pliku.')
-    write_empty()
-    sys.exit(0)
+def build_output(df: pd.DataFrame, group_col: str, name_col: Optional[str]) -> pd.DataFrame:
+    grp = df[group_col].astype(str).str.strip()
+    if name_col:
+        names = df[name_col].astype(str).str.strip()
+    else:
+        names = pd.Series([""] * len(df))
+    out = (
+        pd.DataFrame({"group": grp, "name": names})
+        .groupby("group", dropna=False)["name"]
+        .apply(lambda s: ";".join(sorted({v for v in s if v and v.strip().lower() not in EXCLUDE_STR})))
+        .reset_index()
+        .rename(columns={"name": "names"})
+    )
+    out["names"] = out["names"].replace({"": ""})
+    return out
 
-# ensure columns exist in df
-grp_series = df[group_col].astype(str).str.strip()
-if name_col:
-    name_series = df[name_col].astype(str).str.strip()
-else:
-    name_series = pd.Series([''] * len(df))
+def main(input_path: Optional[str] = None, output_path: Optional[str] = None) -> pd.DataFrame:
+    INPUT = detect_input(input_path)
+    OUTPUT = pathlib.Path(output_path) if output_path else DEFAULT_OUTPUT
 
-out = (
-    pd.DataFrame({'group': grp_series, 'name': name_series})
-    .groupby('group', dropna=False)['name']
-    .apply(lambda s: ';'.join(sorted({v for v in s if v and str(v).strip().lower() not in ['nan','none']})))
-    .reset_index()
-)
-# ensure column name 'names' as documented
-out = out.rename(columns={'name': 'names'})
+    if not INPUT.exists():
+        print(f"Ostrzeżenie: plik nie istnieje: {INPUT}")
+        write_empty_csv(OUTPUT)
+        return pd.DataFrame(columns=["group", "names"])
 
-# normalize empty strings
-out['names'] = out['names'].replace({'': ''})
+    df = read_source_excel(INPUT)
+    if df is None:
+        write_empty_csv(OUTPUT)
+        return pd.DataFrame(columns=["group", "names"])
 
-out.to_csv(OUTPUT, index=False, encoding='utf-8-sig')
-print(f'Zapisano: {OUTPUT}')
+    group_col, name_col = find_columns(df)
+    if not group_col:
+        print("Nie znaleziono kolumny z Grupą zasobów.")
+        write_empty_csv(OUTPUT)
+        return pd.DataFrame(columns=["group", "names"])
+
+    out = build_output(df, group_col, name_col)
+    out.to_csv(OUTPUT, index=False, encoding="utf-8-sig")
+    print(f"Zapisano: {OUTPUT}")
+    return out
+
+if __name__ == "__main__":
+    main()
