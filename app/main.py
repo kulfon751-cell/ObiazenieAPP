@@ -52,6 +52,23 @@ UPLOADED_DATA_NAME = 'DostepnoscWTygodniach.xlsx'
 
 app = FastAPI(title="Dostępność urządzeń")
 
+
+# Simple request logging middleware
+@app.middleware("http")
+async def log_requests(request, call_next):
+    import time
+    logger = __import__('logging').getLogger('uvicorn.access')
+    start = time.time()
+    try:
+        response = await call_next(request)
+    except Exception as exc:
+        duration = (time.time() - start) * 1000
+        logger.exception("%s %s -> exception after %.1fms", request.method, request.url.path, duration)
+        raise
+    duration = (time.time() - start) * 1000
+    logger.info("%s %s %s %.1fms", request.method, request.url.path, response.status_code, duration)
+    return response
+
  
 
 class DevicePartLoad(BaseModel):
