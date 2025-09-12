@@ -33,6 +33,17 @@ def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
     """Read Excel file defensively. If there are multiple sheets, concat them vertically.
     Returns None on failure.
     """
+    # try cache first
+    try:
+        from app.cache import load_df, save_df
+        cached = load_df(path)
+        if cached is not None:
+            logging.getLogger(__name__).info("Loaded cached DataFrame for %s", path)
+            return cached
+    except Exception:
+        # cache optional — ignore on failure
+        pass
+
     try:
         # read all sheets -> dict of DataFrames
         data = pd.read_excel(path, engine="openpyxl", sheet_name=None)
@@ -45,7 +56,13 @@ def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
         if not dfs:
             return pd.DataFrame()
         try:
-            return pd.concat(dfs, ignore_index=True, sort=False)
+            res = pd.concat(dfs, ignore_index=True, sort=False)
+            try:
+                from app.cache import save_df
+                save_df(path, res)
+            except Exception:
+                pass
+            return res
         except Exception as e:
             logging.getLogger(__name__).exception("Błąd łączenia arkuszy: %s", e)
             return None

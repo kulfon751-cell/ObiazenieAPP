@@ -237,6 +237,27 @@ _group_map_cache = None
 _group_map_mtime = None
 
 
+def read_excel_cached(path: pathlib.Path, **kwargs):
+    """Attempt to load a DataFrame from app.cache, falling back to pandas.read_excel.
+    Cache key is based on file mtime+size.
+    """
+    try:
+        from .cache import load_df, save_df
+        cached = load_df(path)
+        if cached is not None:
+            return cached
+    except Exception:
+        pass
+    # fallback to pandas
+    df = pd.read_excel(path, **kwargs)
+    try:
+        from .cache import save_df
+        save_df(path, df)
+    except Exception:
+        pass
+    return df
+
+
 def load_data(force: bool = False) -> pd.DataFrame:
     """Load availability data from DostepnoscWTygodniach.xlsx and normalize columns."""
     global _cache_df, _cache_mtime
@@ -247,7 +268,7 @@ def load_data(force: bool = False) -> pd.DataFrame:
         raise FileNotFoundError(f"Brak pliku: {source}")
     mtime = source.stat().st_mtime
     if force or _cache_df is None or _cache_mtime != mtime:
-        df = pd.read_excel(source)
+        df = read_excel_cached(source)
         lc = {c.lower(): c for c in df.columns}
         device_col = next((lc[k] for k in lc if k in ['device', 'urzadzenie', 'grupa zasobów', 'grupa_zasobow', 'grupa zasobow', 'resource', 'maszyna']), None)
         if device_col is None:
@@ -279,7 +300,7 @@ def load_production_data(force: bool = False) -> pd.DataFrame:
         raise FileNotFoundError(f"Brak pliku produkcji: {source}")
     mtime = source.stat().st_mtime
     if force or _prod_cache_df is None or _prod_cache_mtime != mtime:
-        pdf = pd.read_excel(source, sheet_name='RaportProdukcja')
+        pdf = read_excel_cached(source, sheet_name='RaportProdukcja')
         lc = {c.lower(): c for c in pdf.columns}
         group_col = next((lc[k] for k in lc if 'grupa' in k and 'zasob' in k), None)
         if group_col is None:
@@ -325,11 +346,11 @@ def load_group_map(force: bool = False) -> dict:
     mtime = PROD_FILE.stat().st_mtime
     if force or _group_map_cache is None or _group_map_mtime != mtime:
         try:
-            gm = pd.read_excel(PROD_FILE, sheet_name='GrupaZasobow')
+            gm = read_excel_cached(PROD_FILE, sheet_name='GrupaZasobow')
         except Exception:
             # try alternative sheet name with diacritics
             try:
-                gm = pd.read_excel(PROD_FILE, sheet_name='GrupaZasobów')
+                gm = read_excel_cached(PROD_FILE, sheet_name='GrupaZasobów')
             except Exception:
                 _group_map_cache = {}
                 _group_map_mtime = mtime
