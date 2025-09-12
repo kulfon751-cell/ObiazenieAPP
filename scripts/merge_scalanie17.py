@@ -9,6 +9,7 @@ import pandas as pd
 import pathlib
 import os
 from typing import Optional
+import logging
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = pathlib.Path(r"\\nas1\PRODUKCJA\Scalanie17.xlsx")
@@ -26,7 +27,7 @@ def detect_input(path_override: Optional[str] = None) -> pathlib.Path:
 
 def write_empty_csv(output: pathlib.Path) -> None:
     pd.DataFrame(columns=["group", "names"]).to_csv(output, index=False, encoding="utf-8-sig")
-    print(f"Zapisano pusty plik: {output}")
+    logging.getLogger(__name__).info("Zapisano pusty plik: %s", output)
 
 def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
     """Read Excel file defensively. If there are multiple sheets, concat them vertically.
@@ -36,7 +37,7 @@ def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
         # read all sheets -> dict of DataFrames
         data = pd.read_excel(path, engine="openpyxl", sheet_name=None)
     except Exception as e:
-        print(f"Błąd odczytu pliku: {e}")
+        logging.getLogger(__name__).exception("Błąd odczytu pliku: %s", e)
         return None
     if isinstance(data, dict):
         # concat sheets that have at least one column
@@ -46,7 +47,7 @@ def read_source_excel(path: pathlib.Path) -> Optional[pd.DataFrame]:
         try:
             return pd.concat(dfs, ignore_index=True, sort=False)
         except Exception as e:
-            print(f"Błąd łączenia arkuszy: {e}")
+            logging.getLogger(__name__).exception("Błąd łączenia arkuszy: %s", e)
             return None
     if isinstance(data, pd.DataFrame):
         return data
@@ -99,7 +100,7 @@ def main(input_path: Optional[str] = None, output_path: Optional[str] = None) ->
     INPUT = detect_input(input_path)
     OUTPUT = pathlib.Path(output_path) if output_path else DEFAULT_OUTPUT
     if not INPUT.exists():
-        print(f"Scalanie file not found: {INPUT}")
+        logging.getLogger(__name__).warning("Scalanie file not found: %s", INPUT)
         write_empty_csv(OUTPUT)
         return pd.DataFrame(columns=["group", "names"])
 
@@ -110,22 +111,22 @@ def main(input_path: Optional[str] = None, output_path: Optional[str] = None) ->
 
     # if empty DataFrame after reading sheets
     if isinstance(df, pd.DataFrame) and df.shape[0] == 0:
-        print("Plik zawiera puste arkusze lub brak danych.")
+        logging.getLogger(__name__).warning("Plik zawiera puste arkusze lub brak danych.")
         write_empty_csv(OUTPUT)
         return pd.DataFrame(columns=["group", "names"])
 
     group_col, name_col = find_columns(df)
     if not group_col:
-        print("Nie znaleziono kolumny z Grupą zasobów.")
+        logging.getLogger(__name__).warning("Nie znaleziono kolumny z Grupą zasobów.")
         write_empty_csv(OUTPUT)
         return pd.DataFrame(columns=["group", "names"])
 
     out = build_output(df, group_col, name_col)
     try:
         out.to_csv(OUTPUT, index=False, encoding="utf-8-sig")
-        print(f"Zapisano: {OUTPUT}")
+        logging.getLogger(__name__).info("Zapisano: %s", OUTPUT)
     except Exception as e:
-        print(f"Błąd zapisu pliku CSV: {e}")
+        logging.getLogger(__name__).exception("Błąd zapisu pliku CSV: %s", e)
         # attempt to write an empty CSV as fallback
         write_empty_csv(OUTPUT)
     return out

@@ -8,6 +8,13 @@ import os
 from datetime import date, datetime, timedelta
 import calendar
 import pathlib
+# initialize logging early
+try:
+    from .logging_config import setup_logging
+    setup_logging()
+except Exception:
+    # fail silently in environments where logging can't be configured
+    pass
 
 # Files expected at repository root by default.
 # Allow overriding via environment variables so the app can read files from a network share
